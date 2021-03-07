@@ -14,6 +14,10 @@
         <header class="navegation">
             <img class="navegation__logo" src="../imgs/logoComplete.png">
             
+            <div class="navegation__menub">
+                <img src="../imgs/MunuB.jpg">
+            </div>
+
             <div class="navigation__links">
                 <p class="navegation_about" > Sobre nosotros</p>
                 <p class="navegation__menu">Menú</p>
@@ -33,23 +37,85 @@
             
         </header>
         <main class="main">
-            <section class="main__banner" style="background-image: url(../imgs/imgBanner.jpg);">
+            <section class="main__banner" style="background-image: url(../imgs/BannerNew.jpg);">
                 <h1>Todos <br> merecen <br> un delicioso <br> postre</h1>
                 <button type="button">CONOCE NUESTROS PRODUCTOS </button>
             </section>
+
+            
     
             <section class="main__seller">
+
                 <h2> Los más vendidos </h2>
+
+                <!-------------GALERY----------->
                     <div class="products-row">
-                        <article class="products-row__column product" > 
-                            <img src="../imgs/carrotCake.jpg">
-                            <p class="product__title"> CarrotCake</p>
-                            <p class="product__sub">Con nueces y CheeseCream</p>
+
+                        <!-------------LEFT----------->
+                        <article class="products-row__column" style="background-image: url(../imgs/carrotCake.jpg);"> 
+                            <div class="column__product">
+                                <p class="product__title"> CarrotCake</p>
+                                <p class="product__sub">Con nueces y CheeseCream</p>
+                            </div>
+                            <div class="column__footer">
+                                <img src="../imgs/starScore.png">
+                                <p class="product__price"> $27.000</p>
+                            </div>
                         </article>
+
+                        <!-------------MIDDLE----------->
+                        <article class="products-row__column products-row__column--main" style="background-image: url(../imgs/chocolateCake.jpg);">
+                            <div class="column__product column__product--gold" >
+                                <p class="product__title product__title--choco" > Chocolate Cake</p>
+                                <p class="product__sub product__sub--size">Con ChocolateCream y Moras</p>
+                            </div>
+                            <div class="column__footer column__footer--margin">
+                                <img src="../imgs/starScore.png">
+                                <p class="product__price product__price--size"> $25.000</p>
+                            </div>
+                        </article>
+
+                        <!-------------RIGHT----------->
+                        <article class="products-row__column products-row__column--righ" style="background-image: url(../imgs/redvelvetCupcake.jpg);">
+                            <div class="column__product column__product" >
+                                <p class="product__title" > Red Velvet </p>
+                                <p class="product__sub product__sub">Cupcakes con ButterCream</p>
+                            </div>
+                             <div class="column__footer column__footer">
+                                <img src="../imgs/starScore.png">
+                                <p class="product__price"> $24.000</p>
+                            </div>
+                        </article>
+
                     </div>
+
+                 <button class="seller__ourMenuBtn">NUESTRO MENÚ</button>  
             </section>
     
+            <section class="main__loveDesert" style="background-image: url(../imgs/cinnamonRoll.jpg);">
+                <h2>Amamos el postre</h2>
+                <div class="loveDesert__text">
+                    <p>Nuestro amor por el postre nos hizo iniciar con este sueño y crear <strong class="bold">La Doratta</strong>  con el principal 
+                    proposito de poder que todos los amantes del dulce puedan disfrutar de la calidad de un
+                    producto fresco y delicioso.</p>   
+
+                    <button type="button" class="text__btn" >CONOCE MÁS</button>
+                </div>
+            </section>
+
+            <section class="main__tasteQuality" style="background-image: url(../imgs/hands.jpg), url(../imgs/bake.jpg);">
+                <h2>Sabor y calidad</h2>
+                <p> Nuestro propósito es ofrecerles calidad en nuestros sabores, frescura en nuestros productos y diseños que expresen la emoción
+                    de probar nuestras delicias</p>
+        
+                <!--<img class="imgs__hands" src="../imgs/hands.jpg">
+                <img class="imgs__bake" src="../imgs/bake.jpg"> -->
+                
+            </section>
+
         </main>
+
+        
 
     </div>
     

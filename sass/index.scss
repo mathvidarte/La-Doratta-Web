@@ -6,211 +6,403 @@ body {
     background-color: #ffffff;
     margin: 0px;
     font-size: 18px;
+    //overflow-x: hidden;
+}
 
     .container {
         width: 100%;
         margin: 0 auto;
     }
-   
-}
-
-.navegation {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    font-family: 'Work Sans', sans-serif;
-    color: #be8d49;
-    margin: 0px auto;
-    background-color: #ffffff;
-    font-weight: lighter;
-    height: 104px;
-    width: 100%;
-    top: 0px;
-    z-index: 100;
-    justify-content: flex-start;
-    align-items: center;
-
-    .navegation__logo {
-        position: absolute;
-        width: 85px;
-        height: 68px;
-        left: 93px;
-        top: 10px;
-    }
-
-    .navigation__links {
-        display: flex;
-        flex-direction: row;
-       margin-left: 200px;
-
-        p {
-            margin-left: 50px;
-        }
-    }
-
-    .navigation__search {
-        display: flex;
-        flex-direction: row;
-        margin-left: 200px;
-
-        input {
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            border-color: #be8d49;
-            color: #be8d49;
-            
-        }
     
-        ::placeholder {
-            color: #f0e3d0;
-            font-size: 18px;
-            font-family: 'Work Sans', sans-serif;
-        }
-
-        button {
-            background-color: white;
-            border: none;
-            box-shadow: none;
-            
-        }
-
-
-    }
-
-
-    
-
-    .navigation__networks {
-        position: absolute;
-        right: 93px;
-    }
-
-    .navegation__wa {
-        width: 30px;
-        height: 30px;
+        //------------NAVEGATION--------------------
         
-    }
-
-    .navegation__ig {
-        width: 30px;
-        height: 30px;
-        margin-left: 30px;
-      
-
-
-    }
-}
-
-.main__banner {
-    margin-top: 104px;
-    margin-left: 0px ;
-    margin-right: 0px;;
-    width: 100%;
-    height: 40%;
-
-   /*.banner__first {  
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        height: 40%;
-    }*/
-
-    h1 {
-        position: absolute;
-        top: 48px;
-        left: 93px;
-        font-family: Yeseva One;
-        color: white;
-        font-size: 76px;
-    }
-
-    button {
-        position: absolute;
-        background-color: rgba(0, 0, 0, .0);
-        border-color: white;
-        box-shadow: none;
-        top: 480px;
-        left: 93px;
-        color: white;
-        font-size: 32px;
-        font-family: 'Work Sans', sans-serif;
-        font-style: italic;
-        padding: 5px 10px;
-       
-
-    }
-
-        
-    }
-    
-
-.main__seller {
-    position: relative;
-
-    h2 {
-        position: absolute;
-        margin-top: -40px;
-        top: 0px;
-        left: 70px;
-        font-size: 57px;
-        color: #be8d49;
-        background-color: white;
-        padding-left: 25px;
-        padding-right: 25px;
-        box-sizing: border-box;
-    }
-
-    .products-row {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-    }
-
-    .products-row__column {
-        margin-left: 93px;
-        margin-top: 118px;
-    }
-
-    .product {
-        position: relative;
-        
-        img {
-            position: absolute;
-            width: 274px;
-        }
-       
-
-
-        .product__title {
-            position: absolute;
-            font-size: 20px;
-            font-family: Yeseva One;
-            background-color: rgba(0, 0, 0, .7);
-            padding-top: 5px;
-            padding-left: 80px;
-            padding-right: 80px;
-            padding-bottom: 37px;
-            box-sizing: border-box;
-            color: #be8d49;
-            margin: 0px;
-        }
-
-        .product__sub {
-            position: absolute;
-            font-size: 15px;
+        .navegation {
+            display: flex;
+            flex-direction: row;
+            position: fixed;
             font-family: 'Work Sans', sans-serif;
             color: #be8d49;
-            top: 20px;
-            left: 40px;
+            margin: 0px auto;
+            background-color: #ffffff;
             font-weight: lighter;
-            width: 200px;
+            height: 104px;
+            width: 100%;
+            top: 0px;
+            z-index: 100;
+            justify-content: flex-start;
+            align-items: center;
+        
+            .navegation__logo {
+                position: absolute;
+                width: 85px;
+                height: 68px;
+                left: 93px;
+                top: 10px;
+            }
+        
+            .navegation__menub {
+                display: none;
+            }
+        
+            .navigation__links {
+                display: flex;
+                flex-direction: row;
+               margin-left: 200px;
+        
+                p {
+                    margin-left: 50px;
+                }
+            }
+        
+            .navigation__search {
+                display: flex;
+                flex-direction: row;
+                margin-left: 200px;
+        
+                input {
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-color: #be8d49;
+                    color: #be8d49;
+                    
+                }
+            
+                ::placeholder {
+                    color: #f0e3d0;
+                    font-size: 18px;
+                    font-family: 'Work Sans', sans-serif;
+                }
+        
+                button {
+                    background-color: white;
+                    border: none;
+                    box-shadow: none;
+                    
+                    img {
+                        width: 20px;
+                    }
+                    
+                }
+        
+        
+            }
+        
+            .navigation__networks {
+                position: absolute;
+                right: 93px;
+            }
+        
+            .navegation__wa {
+                width: 30px;
+                height: 30px;
+                
+            }
+        
+            .navegation__ig {
+                width: 30px;
+                height: 30px;
+                margin-left: 30px;
+              
+        
+        
+            }
         }
-    }
-}
+        
+//------------------BANNER--------------------------        
+        
+        .main__banner {
+            width: 100%;
+            height: 700px;
+            background-repeat: no-repeat !important;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        
+            h1 {
+                margin-top: 150px;
+                margin-left: 93px;
+                margin-bottom: 40px;
+                font-family: Yeseva One;
+                color: white;
+                font-size: 400%;
+            }
+        
+            button {
+                background-color: rgba(0, 0, 0, .0);
+                border-color: white;
+                box-shadow: none;
+                color: white;
+                font-size: 32px;
+                font-family: 'Work Sans', sans-serif;
+                font-style: italic;
+                padding: 5px 10px;
+                margin-left: 93px;
+                width: 550px;
+            }
+        
+                
+            }
+            
+//---------------------MOST SELL------------------------
 
-@media screen and (max-width: 414px) {
+        .main__seller {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 500px;
+            align-items: center;
+            
+
+
+            h2 {
+                margin-top: -40px;
+                margin-bottom: 20px;
+                font-size: 57px;
+                color: #be8d49;
+                background-color: white;
+                padding-left: 20px;
+                box-sizing: border-box;
+                width: 470px;
+            }
+
+            .seller__ourMenuBtn {
+                background-color: rgba(0, 0, 0, .0);
+                border-color: #be8d49;
+                box-shadow: none;
+                color: #be8d49;
+                font-size: 32px;
+                font-family: 'Work Sans', sans-serif;
+                font-style: italic;
+                padding: 5px 10px;
+                width: 280px;
+            }
+        
+            .products-row {
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                height: 203px;
+                margin: 50px 93px;
+                align-items: center;
+                justify-content: space-between;
+
+                .products-row__column {
+                    width: 272px;
+                    height: 174px;
+                    background-size: cover;
+                    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+                    
+    
+                    &--main {
+                        width: 317px;
+                        height: 203px;
+                        background-size: cover;
+                        margin: 0px 80px;
+                    }
+                }
+            
+                .column__product {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    align-items: center;
+                    color: #be8d49;
+                    background-color: rgba(0, 0, 0, .7);
+                    
+                    &--gold {
+                        background-color: #d9ac55;
+                        color: black
+                    }
+                    img {
+                        width: 274px;
+                    }
+                
+                    .product__title {
+                        font-size: 20px;
+                        font-family: Yeseva One;
+                        box-sizing: border-box;
+                        margin: 4px 0px 0px 0px;
+    
+                        &--choco {
+                            font-size: 25px;
+                        }
+                    }
+            
+                    .product__sub {
+                        font-size: 15px;
+                        font-family: 'Work Sans', sans-serif;
+                        font-weight: lighter;
+                        width: 200px;
+                        margin-top: 1px;
+                        margin-bottom: 4px;
+    
+                        &--size {
+                            width: 208px;
+                        }
+                    }
+                }
+    
+                .column__footer {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(255,255,255,.0));
+                    margin: 80px 0px 0px 0px;
+                    padding: 10px;
+                    box-sizing: border-box;
+    
+                    img {
+                        width: 99px;
+                        height: 17px;
+                    }
+    
+                    &--margin {
+                        margin-top: 98px;
+                    }
+    
+                    .product__price {
+                        font-size: 20px;
+                        font-weight: inherit;
+                        font-family: 'Work Sans', sans-serif;
+                        color: white;
+                        right: 10px;
+                        bottom: 10px;
+                        margin: 0px;
+                        padding: 0px;
+    
+                        &--size {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        
+            
+        }
+
+        .main__loveDesert{
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat !important;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+    
+    
+    
+            h2 {
+                margin-top: 60px;
+                margin-left: 93px;
+                margin-bottom: 0px;
+                font-size: 57px;
+                color: #be8d49;
+                padding-left: 20px;
+                box-sizing: border-box;
+                width: 470px;
+                z-index: 1;
+             }
+    
+             .loveDesert__text {
+    
+                 width: 50%;
+                 height: 100%;
+                 margin-top: -124px;
+                 background-color: rgba(0, 0, 0, .4);
+                 backdrop-filter: blur(5px);
+    
+                 p {
+                    font-weight: lighter;
+                    font-family: 'Work Sans', sans-serif;
+                     color: white;
+                     margin-top: 250px;
+                     margin-left: 180px;
+                     width: 400px;
+    
+                     .bold {
+                        color: #d9ac55;
+                     }
+                 }
+    
+                .text__btn {
+                    background-color: rgba(0, 0, 0, .0);
+                    border-color: white;
+                    box-shadow: none;
+                    color: white;
+                    font-family: 'Work Sans', sans-serif;
+                    font-style: italic;
+                    margin-top: 20px;
+                    margin-left: 300px;
+                    padding: 5px;
+                    width: 110px;
+                 }  
+             }
+        }
+    
+        .main__tasteQuality{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 700px;
+            align-items: flex-end;
+            background-repeat: no-repeat !important;
+            background-size: 50%;
+            background-position-y: 157px;
+            background-position-x: 93px;
+            
+    
+            h2 {
+                margin-top: -40px;
+                margin-bottom: 20px;
+                margin-right: 93px;
+                font-size: 57px;
+                color: #be8d49;
+                background-color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+                box-sizing: border-box;
+                width: 420px;
+                z-index: 2;
+                
+            }
+
+            p {
+                font-weight: lighter;
+                    font-family: 'Work Sans', sans-serif;
+                     color: #be8d49;
+                     margin-top: 250px;
+                     margin-right: 93px;
+                     width: 400px;
+                     text-align: right;
+                     
+            }
+                
+                
+            .imgs__hands {
+                width: 40%px;
+                margin-right: 200px;
+                margin-top: 157px;
+            }
+
+            .imgs__bake {
+                width: 20%;
+                margin-right: 93px;
+                margin-top: 490px;
+            }
+            
+         }
+        
+   
+    
+   
+
+
+
+//----------------RESPONSIVE---------------------
+
+@media screen and (max-width: 600px) {
     .container {
         width: 100%;
 
@@ -221,8 +413,15 @@ body {
                 position: absolute;
                 width: 85px;
                 height: 68px;
-                left: 207px;
+                left: 170px;
                 top: 10px;
+            }
+
+            .navegation__menub {
+                display: flex;
+                margin-left: 40px;
+                width: 35px;
+                height: 35px;
             }
             
             .navigation__links {
@@ -240,29 +439,41 @@ body {
                 flex-direction: row;
                 justify-content: flex-end;
                 width: 100%;
-                margin-right: 45px;
+                margin-right: 40px;
 
                 input {
                     display: none;
                 }
 
                 button {
-                    width: 20%;
+                    padding: 0px;
 
                     img {
-                        width: 60%;
+                        width: 30px;
+                        margin-right: 0px;
+                        padding: 0px;
                     }
                 }
             }
+        }
+
+        .main__banner {
+            width: 100%;
+            height: 700px;
+            background-repeat: no-repeat !important;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 37px;
+                margin-left: 40px;
+                margin-bottom: 120px;
+            }
+
+            
         }
     }
 
     
 } 
-
-
-
-
-
-
-
