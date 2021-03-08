@@ -349,7 +349,7 @@ body {
             align-items: flex-end;
             background-repeat: no-repeat !important;
             background-size: 50%;
-            background-position-y: 157px;
+            background-position-y: 50%;
             background-position-x: 93px;
             
     
@@ -372,27 +372,74 @@ body {
                 font-weight: lighter;
                     font-family: 'Work Sans', sans-serif;
                      color: #be8d49;
-                     margin-top: 250px;
+                     margin-top: 150px;
                      margin-right: 93px;
                      width: 400px;
                      text-align: right;
                      
             }
-                
-                
-            .imgs__hands {
-                width: 40%px;
-                margin-right: 200px;
-                margin-top: 157px;
-            }
 
-            .imgs__bake {
-                width: 20%;
-                margin-right: 93px;
-                margin-top: 490px;
+            .tasteQuality__Two{
+                width: 30%;
+                height: 100%;
+                background-repeat: no-repeat !important;
+                background-size: 100%;
+                background-position-y: 100%;
+                
+                
             }
             
          }
+
+         .main__customize {
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat !important;
+            background-size: 50%;
+            display: flex;
+            flex-direction: column;
+            background-position-x: right;
+
+            h2 {
+                margin-top: -40px;
+                margin-bottom: 20px;
+                margin-left: 92px;
+                font-size: 57px;
+                color: #be8d49;
+                background-color: white;
+                padding-left: 20px;
+                box-sizing: border-box;
+                width: 470px;
+                z-index: 2;
+            }
+
+            .customize__text {
+                width: 50%;
+                height: 100%;
+                margin-top: -46px;
+                background-color: #be8d49;
+                text-align: center;
+                
+   
+                p {
+                   font-weight: lighter;
+                   font-family: 'Work Sans', sans-serif;
+                    color: white;
+                    margin-top: 250px;
+                    margin-left: 93px;
+                    width: 70%;
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    
+                    
+                }
+         }
+
+
+        
         
    
     
@@ -475,5 +522,5 @@ body {
         }
     }
 
-    
+}
 } 
