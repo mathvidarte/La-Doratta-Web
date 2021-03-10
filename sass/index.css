@@ -483,7 +483,7 @@ body {
   padding-left: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 470px;
+  width: 320px;
   z-index: 2;
 }
 
@@ -509,21 +509,117 @@ body {
   height: 100px;
 }
 
+.main__experience {
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat !important;
+  background-size: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main__experience h2 {
+  margin-top: -40px;
+  margin-bottom: 20px;
+  margin-right: 92px;
+  font-size: 57px;
+  color: #be8d49;
+  background-color: white;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 490px;
+  z-index: 2;
+}
+
+.main__experience .experience__content {
+  width: 50%;
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__experience .experience__content p {
+  font-weight: lighter;
+  font-family: 'Work Sans', sans-serif;
+  color: #be8d49;
+  width: 70%;
+  text-align: right;
+}
+
+.main__experience .experience__content h3 {
+  font-weight: inherit;
+  font-family: 'Work Sans', sans-serif;
+  color: #be8d49;
+  width: 70%;
+  text-align: center;
+}
+
+.main__experience .experience__content .content__radiobtn {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  color: #be8d49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 0px;
+}
+
+.main__experience .experience__content .content__radiobtn .radiobtn__one {
+  margin-top: 30px;
+}
+
+.main__experience .experience__content .content__btn {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #be8d49;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #be8d49;
+  font-family: 'Work Sans', sans-serif;
+  font-style: italic;
+  padding: 5px 10px;
+  width: 234px;
+  margin-top: 40px;
+}
+
 @media screen and (max-width: 600px) {
-  .main__customize .container {
+  .container {
     width: 100%;
   }
-  .main__customize .container .navegation {
+  .container .navegation {
     width: 100%;
   }
-  .main__customize .container .navegation .navegation__logo {
+  .container .navegation .navegation__logo {
     position: absolute;
     width: 85px;
     height: 68px;
     left: 170px;
     top: 10px;
   }
-  .main__customize .container .navegation .navegation__menub {
+  .container .navegation .navegation__menub {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -531,13 +627,13 @@ body {
     width: 35px;
     height: 35px;
   }
-  .main__customize .container .navegation .navigation__links {
+  .container .navegation .navigation__links {
     display: none;
   }
-  .main__customize .container .navegation .navigation__networks {
+  .container .navegation .navigation__networks {
     display: none;
   }
-  .main__customize .container .navegation .navigation__search {
+  .container .navegation .navigation__search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -551,18 +647,18 @@ body {
     width: 100%;
     margin-right: 40px;
   }
-  .main__customize .container .navegation .navigation__search input {
+  .container .navegation .navigation__search input {
     display: none;
   }
-  .main__customize .container .navegation .navigation__search button {
+  .container .navegation .navigation__search button {
     padding: 0px;
   }
-  .main__customize .container .navegation .navigation__search button img {
+  .container .navegation .navigation__search button img {
     width: 30px;
     margin-right: 0px;
     padding: 0px;
   }
-  .main__customize .container .main__banner {
+  .container .main__banner {
     width: 100%;
     height: 700px;
     background-repeat: no-repeat !important;
@@ -575,7 +671,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main__customize .container .main__banner h1 {
+  .container .main__banner h1 {
     font-size: 37px;
     margin-left: 40px;
     margin-bottom: 120px;
