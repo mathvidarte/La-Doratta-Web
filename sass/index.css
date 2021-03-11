@@ -200,15 +200,15 @@ body {
 
 .main__seller .seller__ourMenuBtn {
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid white;
+  border: 2px solid #be8d49;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #be8d49;
   font-size: 32px;
   font-family: 'Work Sans', sans-serif;
   font-style: italic;
-  padding: 5px 10px;
-  width: 280px;
+  padding: 5px 15px 5px 10px;
+  width: 285px;
 }
 
 .main__seller .products-row {
