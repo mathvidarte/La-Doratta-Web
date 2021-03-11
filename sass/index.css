@@ -828,7 +828,7 @@ body {
   border-radius: 50%;
   width: 16px;
   height: 16px;
-  border: 2px solid white;
+  border: 1px solid white;
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
   margin-right: 5px;
