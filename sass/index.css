@@ -29,20 +29,18 @@ body {
   width: 100%;
   top: 0px;
   z-index: 100;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .navegation .navegation__logo {
-  position: absolute;
   width: 85px;
   height: 68px;
-  left: 93px;
-  top: 10px;
+  margin-left: 93px;
 }
 
 .navegation .navegation__menub {
@@ -57,11 +55,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 200px;
 }
 
-.navegation .navigation__links p {
-  margin-left: 50px;
+.navegation .navigation__links .navegation__menu {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .navegation .navigation__search {
@@ -72,7 +70,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 200px;
 }
 
 .navegation .navigation__search input {
@@ -118,11 +115,6 @@ body {
   width: 20px;
 }
 
-.navegation .navigation__networks {
-  position: absolute;
-  right: 93px;
-}
-
 .navegation .navegation__wa {
   width: 30px;
   height: 30px;
@@ -132,6 +124,7 @@ body {
   width: 30px;
   height: 30px;
   margin-left: 30px;
+  margin-right: 93px;
 }
 
 .main__banner {
@@ -928,7 +921,7 @@ body {
   margin-bottom: 3px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 414px) {
   .container {
     width: 100%;
   }
