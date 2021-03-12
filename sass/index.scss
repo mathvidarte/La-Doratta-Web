@@ -309,34 +309,34 @@ body {
     
     
     
-            h2 {
-                margin-top: 60px;
-                margin-left: 93px;
-                margin-bottom: 0px;
-                font-size: 57px;
-                color: #be8d49;
-                padding-left: 20px;
-                box-sizing: border-box;
-                width: 470px;
-                z-index: 1;
-             }
+           
     
              .loveDesert__text {
                  display: flex;
                  flex-direction: column;
                  width: 50%;
                  height: 100%;
-                 margin-top: -124px;
                  background-color: rgba(0, 0, 0, .4);
                  backdrop-filter: blur(5px);
                  align-items: center;
+                 justify-content: center;
+
+                 h2 {
+                    ///margin-bottom: 100px;
+                    font-size: 57px;
+                    color: #be8d49;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    width: 470px;
+                    z-index: 1;
+                 }
     
                  p {
                     font-weight: lighter;
                     font-family: 'Work Sans', sans-serif;
-                     color: white;
-                     margin-top: 250px;
-                     width: 70%;
+                    color: white;
+                    margin: 70px 0px 40px 0px;
+                    width: 70%;
     
                      .bold {
                         color: #d9ac55;
@@ -350,8 +350,7 @@ body {
                     color: white;
                     font-family: 'Work Sans', sans-serif;
                     font-style: italic;
-                    margin-top: 20px;
-                    //margin-left: 300px;
+                    margin-bottom: 150px;
                     padding: 5px;
                     width: 110px;
                  }  
@@ -817,7 +816,7 @@ body {
                 align-items: center;
                 width: 100%;
                 height: 70%;
-                margin: 0px 40px;
+                margin: 0px 16px;
 
                 .menub__hamburguer {
                     height: 60%;
@@ -834,18 +833,19 @@ body {
             }
         }
 
+        //------------BANNER RESPONSIVE--------------------
+
         .main__banner {
             width: 100%;
-            //background-repeat: no-repeat !important;
+            height: 650px;
             background-size: cover;
-            //display: flex;
             flex-direction: column;
 
             .banner__text {
-                margin-left: 40px;
+                margin-left: 16px;
 
                 h1 {
-                    font-size: 37px;
+                    font-size: 40px;
                     margin-bottom: 120px;
                 }
     
@@ -856,7 +856,7 @@ body {
                 }
             }
 
-
+            //------------MOST SELLER RESPONSIVE--------------
             
         }
 
@@ -864,43 +864,66 @@ body {
             display: flex;
             flex-direction: column;
             width: 100%;
-            //height: 700px;
+            height: 100%;
             align-items: center;
 
             h2 {
-                margin-top: -40px;
-                margin-bottom: 20px;
+                text-align: center;
+                margin-top: 20px;
                 font-size: 37px;
-                color: #be8d49;
-                background-color: white;
-                padding-left: 20px;
-                box-sizing: border-box;
-                width: 470px;
-            }
-
-            .seller__ourMenuBtn {
-                background-color: rgba(0, 0, 0, .0);
-                border: 2px solid #be8d49;
-                box-shadow: none;
-                color: #be8d49;
-                font-size: 32px;
-                font-family: 'Work Sans', sans-serif;
-                font-style: italic;
-                padding: 5px 15px 5px 10px;
-                width: 285px;
+                padding: 0px;
+                width: 310px;
             }
         
             .products-row {
                 display: flex;
                 flex-direction: column;
                 width: auto;
-                //height: auto;
+                height: auto;
                 margin: 0px;
-                //margin: 50px 93px;
                 align-items: center;
                 //justify-content: space-between;
-            }  
-        }  
+
+                .products-row__column {
+                    &--main {
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    }
+                }
+            } 
+            
+            .seller__ourMenuBtn {
+                font-size: 18px;
+                width: 160px;
+                padding: 0px;
+                margin: 40px 0px;
+
+            }
+        } 
+        
+        //-------------We Love Desert--------------
+
+        .main__loveDesert {
+
+            .loveDesert__text {
+                width: 100%;
+                margin: 0px;
+                align-content: flex-start;
+
+                h2 {
+                    font-size: 37px;
+                    padding: 0px;
+                    width: 180px;
+                    text-align: center;
+                }
+
+                p {
+                    margin: 90px 16px;
+                    width: auto;
+
+                }
+            }
+        }
     }
 
 

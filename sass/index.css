@@ -372,19 +372,6 @@ body {
           flex-direction: column;
 }
 
-.main__loveDesert h2 {
-  margin-top: 60px;
-  margin-left: 93px;
-  margin-bottom: 0px;
-  font-size: 57px;
-  color: #be8d49;
-  padding-left: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 470px;
-  z-index: 1;
-}
-
 .main__loveDesert .loveDesert__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,20 +382,32 @@ body {
           flex-direction: column;
   width: 50%;
   height: 100%;
-  margin-top: -124px;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__loveDesert .loveDesert__text h2 {
+  font-size: 57px;
+  color: #be8d49;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 470px;
+  z-index: 1;
 }
 
 .main__loveDesert .loveDesert__text p {
   font-weight: lighter;
   font-family: 'Work Sans', sans-serif;
   color: white;
-  margin-top: 250px;
+  margin: 70px 0px 40px 0px;
   width: 70%;
 }
 
@@ -424,7 +423,7 @@ body {
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-style: italic;
-  margin-top: 20px;
+  margin-bottom: 150px;
   padding: 5px;
   width: 110px;
 }
@@ -972,7 +971,7 @@ body {
             align-items: center;
     width: 100%;
     height: 70%;
-    margin: 0px 40px;
+    margin: 0px 16px;
   }
   .container .navegation .navegation__menub .menub__hamburguer {
     height: 60%;
@@ -985,6 +984,7 @@ body {
   }
   .container .main__banner {
     width: 100%;
+    height: 650px;
     background-size: cover;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -992,10 +992,10 @@ body {
             flex-direction: column;
   }
   .container .main__banner .banner__text {
-    margin-left: 40px;
+    margin-left: 16px;
   }
   .container .main__banner .banner__text h1 {
-    font-size: 37px;
+    font-size: 40px;
     margin-bottom: 120px;
   }
   .container .main__banner .banner__text button {
@@ -1012,32 +1012,17 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    height: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .container .main__seller h2 {
-    margin-top: -40px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
     font-size: 37px;
-    color: #be8d49;
-    background-color: white;
-    padding-left: 20px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 470px;
-  }
-  .container .main__seller .seller__ourMenuBtn {
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #be8d49;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    color: #be8d49;
-    font-size: 32px;
-    font-family: 'Work Sans', sans-serif;
-    font-style: italic;
-    padding: 5px 15px 5px 10px;
-    width: 285px;
+    padding: 0px;
+    width: 310px;
   }
   .container .main__seller .products-row {
     display: -webkit-box;
@@ -1048,10 +1033,37 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: auto;
+    height: auto;
     margin: 0px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .container .main__seller .products-row .products-row__column--main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .container .main__seller .seller__ourMenuBtn {
+    font-size: 18px;
+    width: 160px;
+    padding: 0px;
+    margin: 40px 0px;
+  }
+  .container .main__loveDesert .loveDesert__text {
+    width: 100%;
+    margin: 0px;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .container .main__loveDesert .loveDesert__text h2 {
+    font-size: 37px;
+    padding: 0px;
+    width: 180px;
+    text-align: center;
+  }
+  .container .main__loveDesert .loveDesert__text p {
+    margin: 90px 16px;
+    width: auto;
   }
 }
 /*# sourceMappingURL=index.css.map */
