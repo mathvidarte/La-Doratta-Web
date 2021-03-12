@@ -442,7 +442,7 @@ body {
           align-items: flex-end;
   background-image: url(../imgs/tasteQualityImg.png);
   background-repeat: no-repeat !important;
-  background-size: 85%;
+  background-size: 70%;
   background-position: center;
   /*.tasteQuality__Two{
                 width: 30%;
@@ -550,6 +550,7 @@ body {
 }
 
 .main__experience {
+  background-image: url(../imgs/paintCakeGVG.jpg);
   width: 100%;
   height: 600px;
   background-repeat: no-repeat !important;
@@ -578,6 +579,10 @@ body {
           box-sizing: border-box;
   width: 490px;
   z-index: 2;
+}
+
+.main__experience .experience__img {
+  display: none;
 }
 
 .main__experience .experience__content {
@@ -1075,7 +1080,7 @@ body {
   }
   .container .main__tasteQuality {
     width: 100%;
-    height: 500px;
+    height: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1105,6 +1110,7 @@ body {
   }
   .container .main__customize {
     width: 100%;
+    height: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1119,9 +1125,7 @@ body {
     width: auto;
   }
   .container .main__customize .customizeRespo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline;
     width: 100%;
   }
   .container .main__customize .customize__text {
@@ -1138,6 +1142,50 @@ body {
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
+  }
+  .container .main__experience {
+    background-image: none;
+    width: 100%;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .main__experience h2 {
+    margin: 20px 0px;
+    font-size: 37px;
+    background-color: rgba(129, 0, 0, 0);
+    padding: 0px;
+    width: auto;
+  }
+  .container .main__experience .experience__img {
+    display: inline;
+    width: 100%;
+  }
+  .container .main__experience .experience__content {
+    width: 100%;
+  }
+  .container .main__experience .experience__content p {
+    text-align: left;
+  }
+  .container .main__experience .experience__content .content__radiobtn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .main__experience .experience__content .content__radiobtn .radiobtn__one {
+    margin: 0px 20px 0px 0px;
+  }
+  .container .main__info {
+    width: 100%;
+  }
+  .container .main__newsletter h2 {
+    font-size: 37px;
+    width: auto;
   }
 }
 /*# sourceMappingURL=index.css.map */

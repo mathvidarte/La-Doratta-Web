@@ -367,7 +367,7 @@ body {
             align-items: flex-end;
             background-image: url(../imgs/tasteQualityImg.png);
             background-repeat: no-repeat !important;
-            background-size: 85%;
+            background-size: 70%;
             background-position: center;
             
     
@@ -470,6 +470,7 @@ body {
     }
 
 .main__experience {
+    background-image: url(../imgs/paintCakeGVG.jpg);
     width: 100%;
     height: 600px;
     background-repeat: no-repeat !important;
@@ -489,6 +490,10 @@ body {
         box-sizing: border-box;
         width: 490px;
         z-index: 2;
+    }
+
+    .experience__img {
+        display: none;
     }
 
     .experience__content {
@@ -937,7 +942,7 @@ body {
 
         .main__tasteQuality{
             width: 100%;
-            height: 500px;
+            height: auto;
             align-items: center;
             background-image: none;
            
@@ -970,6 +975,7 @@ body {
 
         .main__customize {
             width: 100%;
+            height: auto;
             align-items: center;
             background-image: none;
 
@@ -983,7 +989,7 @@ body {
             }
 
             .customizeRespo {
-                display: flex;
+                display: inline;
                 width: 100%;
             }
 
@@ -1008,8 +1014,58 @@ body {
             }
         }
 
-        .main__experience {
+        //----------------Experience----------------------
 
+        .main__experience {
+            background-image: none;
+            width: 100%;
+            height: auto;
+            align-items: center;
+
+            h2 {
+                margin: 20px 0px;
+                font-size: 37px;
+                background-color: rgba(129, 0, 0, 0);
+                padding: 0px;
+                width: auto;
+            }
+
+            .experience__img {
+                display: inline;
+                width: 100%;
+            }
+
+            .experience__content {
+                width: 100%;
+
+                p {
+                    text-align: left;
+                }
+
+                .content__radiobtn {
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .radiobtn__one {
+                        margin: 0px 20px 0px 0px;
+                    }
+
+
+                }
+            }
+
+        }
+
+        .main__info {
+            width: 100%;
+
+        }
+
+        .main__newsletter {
+            h2 {
+                font-size: 37px;
+                width: auto;
+            }
         }
     }
 
