@@ -18,7 +18,6 @@ body {
         
         .navegation {
             display: flex;
-            flex-direction: row;
             position: fixed;
             font-family: 'Work Sans', sans-serif;
             color: #be8d49;
@@ -28,85 +27,89 @@ body {
             height: 104px;
             width: 100%;
             z-index: 100;
-            justify-content: space-between;
-            align-items: center;
-        
-            .navegation__logo {
-                width: 85px;
-                height: 68px;
-                margin-left: 93px;
-            }
+            justify-content: center;
+            
 
-            .navigation__logoMedium {
-                display: none;
-            }
-        
-            .navegation__menub {
-                display: none;
-            }
-        
-            .navigation__links {
+            .navigation__menua {
                 display: flex;
                 flex-direction: row;
-        
-                .navegation__menu{
-                    margin-left: 40px;
-                    margin-right: 40px;
-                }
-            }
-        
-            .navigation__search {
-                display: flex;
-                flex-direction: row;
+                width: 100%;
+                margin: auto;
+                justify-content: space-between;
+                align-items: center;
                 
-        
-                input {
-                    border-top: none;
-                    border-left: none;
-                    border-right: none;
-                    border-color: #be8d49;
-                    color: #be8d49;
-                    
+
+                .menua__logo {
+                    width: 85px;
+                    height: 68px;
+                    margin-left: 93px;
                 }
             
-                ::placeholder {
-                    color: #f0e3d0;
-                    font-size: 18px;
-                    font-family: 'Work Sans', sans-serif;
-                }
-        
-                button {
-                    background-color: white;
-                    border: none;
-                    box-shadow: none;
-                    
-                    img {
-                        width: 20px;
+                .menua__links {
+                    display: flex;
+                    flex-direction: row;
+            
+                    .links__menu{
+                        margin-left: 40px;
+                        margin-right: 40px;
                     }
-                    
                 }
-        
-        
-            }
-        
-            .navigation__networks {
+            
+                .menua__search {
+                    display: flex;
+                    flex-direction: row;
+                    
+            
+                    input {
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        border-color: #be8d49;
+                        color: #be8d49;
+                        
+                    }
                 
-            }
-        
-            .navegation__wa {
-                width: 30px;
-                height: 30px;
+                    ::placeholder {
+                        color: #f0e3d0;
+                        font-size: 18px;
+                        font-family: 'Work Sans', sans-serif;
+                    }
+            
+                    button {
+                        background-color: white;
+                        border: none;
+                        box-shadow: none;
+                        
+                        img {
+                            width: 20px;
+                        }
+                        
+                    }
+            
+            
+                }
+            
+                .menu__networks {
+                    
+                    .networks__wa {
+                        width: 30px;
+                        height: 30px;
+                        
+                    }
                 
+                    .networks__ig {
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 30px;
+                        margin-right: 93px;
+                    }
+                }
             }
         
-            .navegation__ig {
-                width: 30px;
-                height: 30px;
-                margin-left: 30px;
-                margin-right: 93px;
-              
         
-        
+
+            .navegation__menub {
+                display: none;
             }
         }
         
@@ -808,49 +811,34 @@ body {
             height: 104px;
             width: 100%;
             z-index: 100;
-            justify-content: center;
-            align-content: center;
+            justify-content: space-between;
+            align-items: center;
 
-            .navegation__logo {
-                display: none; 
+            .navigation__menua {
+                display: none;
             }
 
-            .navigation__logoMedium {
-                
-            }
-
-            .navegation__menub {
+            .navegation__menub{
                 display: flex;
-                width: 35px;
-                height: 35px;
-            }
-            
-            .navigation__links {
-                display: none;
-            }
-
-            .navigation__networks{
-                display: none;
-            }
-
-            
-
-            .navigation__search {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
                 width: 100%;
+                height: 70%;
+                margin: 0px 40px;
 
-                input {
-                    display: none;
+                .menub__hamburguer {
+                    height: 60%;
                 }
 
-                button {
-                    padding: 0px;
-
-                    img {
-                        width: 30px;
-                        margin-right: 0px;
-                        padding: 0px;
-                    }
+                .menub__logo {
+                    height: 110%;
                 }
+
+                .menub__search {
+                    height: 60%;
+                }
+                
             }
         }
 
