@@ -6,7 +6,7 @@ body {
     background-color: #ffffff;
     margin: 0px;
     font-size: 18px;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
 
     .container {
@@ -366,9 +366,8 @@ body {
             height: 700px;
             align-items: flex-end;
             background-repeat: no-repeat !important;
-            background-size: 50%;
-            background-position-y: 50%;
-            background-position-x: 93px;
+            background-size: 85%;
+            background-position: center;
             
     
             h2 {
@@ -397,7 +396,7 @@ body {
                      
             }
 
-            .tasteQuality__Two{
+            /*.tasteQuality__Two{
                 width: 30%;
                 height: 100%;
                 background-repeat: no-repeat !important;
@@ -405,13 +404,14 @@ body {
                 background-position-y: 100%;
                 
                 
-            }
+            }*/
             
          }
 
          //-----------------Customize----------------------
 
          .main__customize {
+            background-image: url(../imgs/customize.jpg);
             width: 100%;
             height: 600px;
             background-repeat: no-repeat !important;
@@ -431,6 +431,10 @@ body {
                 box-sizing: border-box;
                 width: 320px;
                 z-index: 2;
+            }
+
+            .customizeRespo {
+                display: none;
             }
 
             .customize__text {
@@ -922,6 +926,76 @@ body {
                     width: auto;
 
                 }
+            }
+        }
+
+        //-----------------Taste and Quality------------
+
+        .main__tasteQuality{
+            width: 100%;
+            height: 600px;
+            align-items: center;
+            background-repeat: no-repeat !important;
+            background-size: 100%;
+            background-position: center;
+           
+
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-right: 0px;
+                background-color: rgba(129, 0, 0, 0);
+                font-size: 37px;
+                padding: 0px;
+                box-sizing: border-box;
+                width: auto;  
+            }
+
+            p {
+                margin: 420px 0px 40px 0px;
+                text-align: left;
+                font-size: 16px;
+            }
+        } 
+        
+        //-------------Customize-------------
+
+        .main__customize {
+            width: 100%;
+            align-items: center;
+            background-image: none;
+
+            h2 {
+                margin-top: 20px;
+                margin-left: 0px;
+                background-color: rgba(129, 0, 0, 0);
+                padding: 0px;
+                font-size: 37px;
+                width: auto;
+            }
+
+            .customizeRespo {
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+
+            .customize__text{
+                width: 100%;
+                height: 45%;
+                margin-top: 0px;
+
+                p {
+                    font-size: 16px;
+                    margin-top: 40px;
+                }
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 40px;
+                }
+
             }
         }
     }
