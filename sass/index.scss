@@ -365,6 +365,7 @@ body {
             width: 100%;
             height: 700px;
             align-items: flex-end;
+            background-image: url(../imgs/tasteQualityImg.png);
             background-repeat: no-repeat !important;
             background-size: 85%;
             background-position: center;
@@ -383,6 +384,10 @@ body {
                 width: 420px;
                 z-index: 2;
                 
+            }
+
+            .teateQuality__respo {
+                display: none;
             }
 
             p {
@@ -917,7 +922,7 @@ body {
                 h2 {
                     font-size: 37px;
                     padding: 0px;
-                    width: 180px;
+                    width: auto;
                     text-align: center;
                 }
 
@@ -933,11 +938,9 @@ body {
 
         .main__tasteQuality{
             width: 100%;
-            height: 600px;
+            height: 500px;
             align-items: center;
-            background-repeat: no-repeat !important;
-            background-size: 100%;
-            background-position: center;
+            background-image: none;
            
 
             h2 {
@@ -951,8 +954,13 @@ body {
                 width: auto;  
             }
 
+            .teateQuality__respo {
+                display: flex;
+                width: 100%;
+            }
+
             p {
-                margin: 420px 0px 40px 0px;
+                margin: 20px 0px 40px 0px;
                 text-align: left;
                 font-size: 16px;
             }
@@ -977,7 +985,6 @@ body {
             .customizeRespo {
                 display: flex;
                 width: 100%;
-                height: 100%;
             }
 
             .customize__text{
