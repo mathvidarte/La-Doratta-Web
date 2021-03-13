@@ -49,7 +49,6 @@ body {
 
 .navegation .navigation__menua .menua__logo {
   width: 85px;
-  height: 68px;
   margin-left: 93px;
 }
 
@@ -182,7 +181,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-style: italic;
   padding: 5px 10px;
-  width: 550px;
+  width: auto;
 }
 
 .main__seller {
@@ -194,7 +193,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 500px;
+  height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -223,6 +222,7 @@ body {
   font-style: italic;
   padding: 5px 15px 5px 10px;
   width: 285px;
+  margin-bottom: 60px;
 }
 
 .main__seller .products-row {
@@ -359,7 +359,7 @@ body {
 
 .main__loveDesert {
   width: 100%;
-  height: 600px;
+  height: auto;
   background-repeat: no-repeat !important;
   background-size: cover;
   display: -webkit-box;
@@ -444,21 +444,12 @@ body {
   background-repeat: no-repeat !important;
   background-size: 70%;
   background-position: center;
-  /*.tasteQuality__Two{
-                width: 30%;
-                height: 100%;
-                background-repeat: no-repeat !important;
-                background-size: 100%;
-                background-position-y: 100%;
-                
-                
-            }*/
 }
 
 .main__tasteQuality h2 {
   margin-top: -40px;
   margin-bottom: 20px;
-  margin-right: 93px;
+  margin-right: 70px;
   font-size: 57px;
   color: #be8d49;
   background-color: white;
@@ -527,6 +518,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
+  height: 100%;
   margin-top: -46px;
   background-color: #be8d49;
   text-align: center;
@@ -1106,7 +1098,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 90%;
   }
   .container .main__tasteQuality p {
     text-align: left;
@@ -1172,6 +1164,9 @@ body {
   }
   .container .main__experience .experience__content p {
     text-align: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
   }
   .container .main__experience .experience__content .content__radiobtn {
     -webkit-box-orient: horizontal;
@@ -1196,6 +1191,7 @@ body {
   .container .main__info h2 {
     margin: 60px 0px 20px 0px;
     font-size: 37px;
+    width: auto;
   }
   .container .main__info .info__table {
     display: none;
