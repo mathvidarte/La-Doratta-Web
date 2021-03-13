@@ -749,7 +749,7 @@ body {
   margin-left: 93px;
   font-size: 40px;
   color: white;
-  width: 617px;
+  width: auto;
 }
 
 .main__newsletter .newsletter__inputs {
@@ -1187,9 +1187,14 @@ body {
   }
   .container .main__info {
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: 50%;
+    background-position-y: 50%;
   }
   .container .main__info h2 {
-    margin: 20px 0px;
+    margin: 60px 0px 20px 0px;
     font-size: 37px;
   }
   .container .main__info .info__table {
@@ -1233,9 +1238,35 @@ body {
   .container .main__info .info__note {
     margin: 16px 16px 20px 16px;
   }
+  .container .main__newsletter {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .container .main__newsletter h2 {
+    margin: 20px 0px 20px 0px;
     font-size: 37px;
+    text-align: center;
     width: auto;
+  }
+  .container .main__newsletter .newsletter__inputs {
+    margin: 27px 16px;
+  }
+  .container .main__newsletter .newsletter__inputs .inputs__email .newsletter__email {
+    width: 100%;
+  }
+  .container .main__newsletter .newsletter__inputs .inputs__bday {
+    width: 100%;
+  }
+  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__month {
+    width: 16%;
+  }
+  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__day {
+    width: 16%;
+  }
+  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__year {
+    width: 16%;
   }
 }
 /*# sourceMappingURL=index.css.map */

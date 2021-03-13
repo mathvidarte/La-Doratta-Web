@@ -641,7 +641,7 @@ body {
         margin-left: 93px;
         font-size: 40px;
         color: white;
-        width: 617px;
+        width: auto;
     }
 
     .newsletter__inputs {
@@ -1060,9 +1060,12 @@ body {
 
         .main__info {
             width: 100%;
+            align-items: center;
+            background-size: 50%;
+            background-position-y: 50%;
 
             h2 {
-                margin: 20px 0px;
+                margin: 60px 0px 20px 0px;
                 font-size: 37px;
             }
 
@@ -1119,9 +1122,40 @@ body {
         }
 
         .main__newsletter {
+            width: 100%;
+            justify-content: center;
+
             h2 {
+                margin: 20px 0px 20px 0px;
                 font-size: 37px;
+                text-align: center;
                 width: auto;
+            }
+
+            .newsletter__inputs {
+                margin: 27px 16px;
+
+                .inputs__email {
+                    .newsletter__email {
+                        width: 100%
+                    }
+                }
+
+                .inputs__bday {
+                    width: 100%;
+
+                    .bday__month {
+                        width: 16%;
+                    }
+
+                    .bday__day {
+                        width: 16%;
+                    }
+
+                    .bday__year {
+                        width: 16%;
+                    }
+                }
             }
         }
     }
