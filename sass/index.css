@@ -1050,8 +1050,7 @@ body {
             align-items: center;
   }
   .container .main__seller .products-row .products-row__column--main {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0px;
   }
   .container .main__seller .seller__ourMenuBtn {
     font-size: 18px;
@@ -1169,16 +1168,13 @@ body {
     width: auto;
   }
   .container .main__experience .experience__content .content__radiobtn {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin: 0px 16px;
   }
   .container .main__experience .experience__content .content__radiobtn .radiobtn__one {
-    margin: 0px 20px 0px 0px;
+    margin: 0px 0px 20px 0px;
   }
   .container .main__info {
     width: 100%;

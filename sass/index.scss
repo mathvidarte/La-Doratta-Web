@@ -880,8 +880,7 @@ body {
 
                 .products-row__column {
                     &--main {
-                        margin-top: 30px;
-                        margin-bottom: 30px;
+                        margin: 30px 0px;
                     }
                 }
             } 
@@ -1027,11 +1026,12 @@ body {
                 }
 
                 .content__radiobtn {
-                    flex-direction: row;
+                    //flex-direction: row;
                     justify-content: space-between;
+                    margin: 0px 16px;
 
                     .radiobtn__one {
-                        margin: 0px 20px 0px 0px;
+                        margin: 0px 0px 20px 0px;
                     }
                 }
             }
