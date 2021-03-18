@@ -140,22 +140,25 @@
 
             <section class="main__experience">
                 <h2>Nueva experiencia</h2>
-                <img class="experience__img" src="imgs/paintCakeGVG.jpg">
-                <div class="experience__content">
-                    <p>Porque queremos una experiencia más cercana con ustedes, con nuestra Paint Cake, puedes escoger los colores que desees que lleven</p>
-                    <h3>Selecciona una opción y mira algunas:</h3>
-                    <div class="content__radiobtn">
-                        <label class="radiobtn__one">
-                            <input type="radio" name="cake">
-                            Verde, violeta, dorado
-                        </label>
-                        <label class="radiobtn__one">
-                            <input type="radio" name="cake">
-                            Salmón, violeta, rosa
-                        </label>
+                <div class="experience__row">
+                    <div class="row__img"></div>
+                    <!-- <img class="experience__img" src="imgs/paintCakeGVG.jpg"> -->
+                    <div class="row__content">
+                        <p>Porque queremos una experiencia más cercana con ustedes, con nuestra Paint Cake, puedes escoger los colores que desees que lleven</p>
+                        <h3>Selecciona una opción y mira algunas:</h3>
+                        <div class="content__radiobtn">
+                            <label class="radiobtn__one">
+                                <input type="radio" name="cake" class="one__btn" data-src="imgs/paintCakeGVG.jpg">
+                                Verde, violeta, dorado
+                            </label>
+                            <label class="radiobtn__one">
+                                <input type="radio" name="cake" class="one__btn" data-src="imgs/paintCakeSVG">
+                                Salmón, violeta, rosa
+                            </label>
+                        </div>
+    
+                        <button type="button" class="content__btn"> CREA Y ORDENA TU PAINT CAKE </button>
                     </div>
-
-                    <button type="button" class="content__btn"> CREA Y ORDENA TU PAINT CAKE </button>
                 </div>
             </section>
 
@@ -388,6 +391,6 @@
 
     </div>
     
-    
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
