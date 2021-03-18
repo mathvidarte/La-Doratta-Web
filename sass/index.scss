@@ -644,40 +644,60 @@ body {
             justify-content: space-between;
             margin-bottom: 10px;
 
-            .newsletter__name {
-                width: 50%;
-                margin-right: 20px;
+            .first__firstname {
+                display: flex;
+                flex-direction: column;
+                width: 49%;
+                align-items: stretch;
             }
 
-            .newsletter__lastname {
-                width: 50%;
-            
-            }
+            .first__lastname {
+                display: flex;
+                flex-direction: column;
+                width: 49%;
+            } 
 
             label {
-                margin-top: 11px;
-                margin-right: 10px;
+                margin-bottom: 5px;
             }
         }
-
+//---------------------
         .inputs__email {
             display: flex;
             width: 100%;
-            justify-content: space-between;
             margin-bottom: 10px;
 
-            .newsletter__email {
-                width: 75%;
+            .email__type {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
             }
 
             label {
-                margin-top: 11px;
-                margin-right: 10px;
+                margin-bottom: 5px;
             }
         }
 
+        .inputs__bday {
+            display: flex;
+            flex-direction: column;
+            width: auto;
 
 
+            .bday__row {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                .row__day {
+                    margin: 0px 10px;
+                }
+            }
+
+            label {
+                width: auto;
+                margin-bottom: 5px;
+            }
+        }
         input {
             border-color: white;
             background-color: rgba(0, 0, 0, .0);
@@ -894,7 +914,7 @@ body {
             }
         } 
         
-        //-------------We Love Desert--------------
+        //-------------We Love Desert RESPONSIVE--------------
 
         .main__loveDesert {
 
@@ -918,7 +938,7 @@ body {
             }
         }
 
-        //-----------------Taste and Quality------------
+        //-----------------Taste and Quality RESPONSIVE------------
 
         .main__tasteQuality{
             width: 100%;
@@ -951,7 +971,7 @@ body {
             }
         } 
         
-        //-------------Customize-------------
+        //-------------Customize RESPONSIVE-------------
 
         .main__customize {
             width: 100%;
@@ -994,7 +1014,7 @@ body {
             }
         }
 
-        //----------------Experience----------------------
+        //----------------Experience RESPONSIVE----------------------
 
         .main__experience {
             background-image: none;
@@ -1037,7 +1057,7 @@ body {
             }
         }
 
-        //----------------Information-----------------
+        //----------------Information RESPONSIVE-----------------
 
         .main__info {
             width: 100%;
@@ -1103,6 +1123,8 @@ body {
             }
         }
 
+        //-------------NEWSLETTER RESPONSIVE-----------------
+
         .main__newsletter {
             width: 100%;
             justify-content: center;
@@ -1118,24 +1140,29 @@ body {
                 margin: 27px 16px;
 
                 .inputs__email {
-                    .newsletter__email {
-                        width: 100%
+                    .email__type     {
+                        width: 100%;
+                        justify-content: space-between;
                     }
                 }
 
                 .inputs__bday {
                     width: 100%;
 
-                    .bday__month {
-                        width: 16%;
-                    }
+                    .bday__row {
+                        width: 100%;
 
-                    .bday__day {
-                        width: 16%;
-                    }
+                        .row__month {
+                            width: 33%;
+                        }
 
-                    .bday__year {
-                        width: 16%;
+                        .row__day {
+                            width: 33%;
+                        }
+
+                        .row__year {
+                            width: 33%;
+                        }
                     }
                 }
             }

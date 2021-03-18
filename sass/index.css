@@ -773,18 +773,33 @@ body {
   margin-bottom: 10px;
 }
 
-.main__newsletter .newsletter__inputs .inputs__first .newsletter__name {
-  width: 50%;
-  margin-right: 20px;
+.main__newsletter .newsletter__inputs .inputs__first .first__firstname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
-.main__newsletter .newsletter__inputs .inputs__first .newsletter__lastname {
-  width: 50%;
+.main__newsletter .newsletter__inputs .inputs__first .first__lastname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
 }
 
 .main__newsletter .newsletter__inputs .inputs__first label {
-  margin-top: 11px;
-  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .main__newsletter .newsletter__inputs .inputs__email {
@@ -792,19 +807,53 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.main__newsletter .newsletter__inputs .inputs__email .newsletter__email {
-  width: 75%;
+.main__newsletter .newsletter__inputs .inputs__email .email__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .main__newsletter .newsletter__inputs .inputs__email label {
-  margin-top: 11px;
-  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.main__newsletter .newsletter__inputs .inputs__bday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+}
+
+.main__newsletter .newsletter__inputs .inputs__bday .bday__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.main__newsletter .newsletter__inputs .inputs__bday .bday__row .row__day {
+  margin: 0px 10px;
+}
+
+.main__newsletter .newsletter__inputs .inputs__bday label {
+  width: auto;
+  margin-bottom: 5px;
 }
 
 .main__newsletter .newsletter__inputs input {
@@ -1245,20 +1294,26 @@ body {
   .container .main__newsletter .newsletter__inputs {
     margin: 27px 16px;
   }
-  .container .main__newsletter .newsletter__inputs .inputs__email .newsletter__email {
+  .container .main__newsletter .newsletter__inputs .inputs__email .email__type {
     width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .container .main__newsletter .newsletter__inputs .inputs__bday {
     width: 100%;
   }
-  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__month {
-    width: 16%;
+  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__row {
+    width: 100%;
   }
-  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__day {
-    width: 16%;
+  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__row .row__month {
+    width: 33%;
   }
-  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__year {
-    width: 16%;
+  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__row .row__day {
+    width: 33%;
+  }
+  .container .main__newsletter .newsletter__inputs .inputs__bday .bday__row .row__year {
+    width: 33%;
   }
 }
 /*# sourceMappingURL=index.css.map */
