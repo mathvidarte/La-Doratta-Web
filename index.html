@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/index.css">
+    <link rel="stylesheet" href="sass/pushbar.css">
     <title>La Doratta</title>
 </head>
 <body>
     <div class="container">
-        
+
         <header class="navegation">
             <div class="navigation__menua">
                 <img class="menua__logo" src="imgs/logoComplete.png">
@@ -33,14 +34,10 @@
             </div>
 
             <div class="navegation__menub">
-                <button class="menub__hamburguer" ><img src="imgs/MunuB.jpg"></button>
+                <!--<button class="menub__hamburguer" ><img src="imgs/MunuB.jpg"></button>-->
+                <label class="menub__hamburguer" for="menub__hamburguer"><img src="imgs/MunuB.jpg"></label>
                 <img class="menub__logo" src="imgs/logoMedium.png">
                 <img class="menub__search" src="imgs/searchIcon.png"/>
-                <nav class="menub__links">
-                    <p class="links_about" > Sobre nosotros</p>
-                    <p class="links__menu">Menú</p>
-                    <p class="links__contact">Contáctanos</p>
-                </nav>
             </div>
             
         </header>
@@ -412,9 +409,24 @@
             </section>
         </footer>
 
+
+        <input type="checkbox" id="menub__hamburguer">
+
+        <div class="container__menu"> 
+            <div class="cont__menu">
+                <nav>
+                    <a href="#" class="links_about" > Sobre nosotros</a>
+                    <a href="#" class="links__menu">Menú</a>
+                    <a href="#" class="links__contact">Contáctanos</a>
+                </nav>
+                <label class="menu__close" for="menub__hamburguer"><img src="imgs/close.png"></label>
+            </div>
+        </div>
         
 
     </div>
+
+
     
     <script src="./scripts/main.js"></script>
 </body>

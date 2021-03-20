@@ -39,3 +39,10 @@ function handleForEach (elem, i) {
 } 
 
 onebtn.forEach(handleForEach);
+
+
+function handleMenu () {
+    
+}
+
+menubHamburguer.addEventListener('click', handleMenu);
