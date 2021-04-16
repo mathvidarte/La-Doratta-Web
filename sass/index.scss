@@ -1,3 +1,4 @@
+@import 'store';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
 
@@ -19,6 +20,7 @@ body {
         .navegation {
             display: flex;
             position: fixed;
+            top:0px;
             font-family: 'Work Sans', sans-serif;
             color: #be8d49;
             margin: 0px auto;

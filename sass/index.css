@@ -1,5 +1,208 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navegation .menub__car {
+    height: 70%;
+  }
+  .main {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+  }
+  .main__status {
+    margin: 0px 16px 20px 16px;
+  }
+  .main__status a {
+    text-decoration: none;
+    color: #be8d49;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .main__banner {
+    width: 100%;
+    height: 230px;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__banner h1 {
+    margin: 40px 0px 0px 16px;
+    font-family: Yeseva One;
+    color: white;
+    width: 70%;
+    font-size: 40px;
+  }
+  .main__banner p {
+    margin: 0px 0px 5px 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    color: white;
+    width: 70%;
+    font-size: 25px;
+  }
+  .main__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 16px;
+  }
+  .main__search input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #be8d49;
+    color: #be8d49;
+    width: 70%;
+  }
+  .main__search ::-webkit-input-placeholder {
+    color: #f0e3d0;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .main__search :-ms-input-placeholder {
+    color: #f0e3d0;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .main__search ::-ms-input-placeholder {
+    color: #f0e3d0;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .main__search ::placeholder {
+    color: #f0e3d0;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .main__search button {
+    background-color: white;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .main__search button img {
+    width: 20px;
+  }
+  .main__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .main__list .product {
+    width: 382px;
+    height: 253px;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 42px;
+    text-decoration: none;
+  }
+  .main__list .product .column__product {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(190, 141, 73, 0.7);
+    color: black;
+  }
+  .main__list .product .column__product .product__title {
+    font-size: 20px;
+    font-family: Yeseva One;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 4px 0px 0px 0px;
+    color: black;
+    text-align: center;
+  }
+  .main__list .product .column__product .product__sub {
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    margin-top: 1px;
+    margin-bottom: 4px;
+  }
+  .main__list .product .column__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0));
+    margin: 80px 0px 0px 0px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .main__list .product .column__footer img {
+    width: 99px;
+    height: 17px;
+  }
+  .main__list .product .column__footer .product__price {
+    font-size: 20px;
+    font-weight: inherit;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    right: 10px;
+    bottom: 10px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main__list .product .column__footer button {
+    width: 23px;
+    height: 22px;
+    background: none;
+    border: none;
+  }
+  .main__list .product .column__footer button img {
+    width: 23px;
+    height: 22px;
+  }
+}
+
 body {
   background-color: #ffffff;
   margin: 0px;
@@ -16,6 +219,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
+  top: 0px;
   font-family: 'Work Sans', sans-serif;
   color: #be8d49;
   margin: 0px auto;

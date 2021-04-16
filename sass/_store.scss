@@ -1,0 +1,191 @@
+
+//----- RESPONSIVEEEEEE -----------------
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+        .navegation{
+
+            .menub__car {
+                height: 70%;
+            }
+           
+            
+        }
+
+        .main {
+            width: 100%;
+            height: auto;
+            margin-top: 70px;
+
+            &__status {
+                margin: 0px 16px 20px 16px;
+
+                a {
+                    text-decoration: none;
+                    color: #be8d49;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: lighter;
+                }
+            }
+
+            &__banner {
+                width: 100%;
+                height: 230px;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    margin: 40px 0px 0px 16px;
+                    font-family: Yeseva One;
+                    color: white;
+                    width: 70%;
+                    font-size: 40px;
+                }
+
+                p{
+                    margin: 0px 0px 5px 16px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: lighter;
+                    color: white;
+                    width: 70%;
+                    font-size: 25px;
+                }
+            }
+
+            &__search {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 20px 16px;
+
+
+                input {
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-color: #be8d49;
+                    color: #be8d49;
+                    width: 70%;
+                    
+                }
+            
+                ::placeholder {
+                    color: #f0e3d0;
+                    font-size: 18px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: lighter;
+                }
+        
+                button {
+                    background-color: white;
+                    border: none;
+                    box-shadow: none;
+                    
+                    img {
+                        width: 20px;
+                    }
+                    
+                }
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .product {
+                    width: 382px;
+                    height: 253px;
+                    background-size: cover;
+                    display: flex;
+                    flex-direction: column;
+                    //box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+                    margin-bottom: 42px;
+                    text-decoration: none;
+                    
+
+                    .column__product {
+                        width: 100%;
+                        text-align: center;
+                        background-color: rgba($color: #be8d49, $alpha: .7);
+                        color: black;
+
+                        .product__title {
+                            font-size: 20px;
+                            font-family: Yeseva One;
+                            box-sizing: border-box;
+                            margin: 4px 0px 0px 0px; 
+                            color: black;
+                            text-align: center;
+                        }
+
+                        .product__sub {
+                            font-size: 15px;
+                            font-family: 'Work Sans', sans-serif;
+                            font-weight: lighter;
+                            margin-top: 1px;
+                            margin-bottom: 4px;
+                        }
+                    }
+
+                    .column__footer {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        justify-content: space-between;
+                        align-items: center;
+                        background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(255,255,255,.0));
+                        margin: 80px 0px 0px 0px;
+                        padding: 10px;
+                        box-sizing: border-box;
+        
+                        img {
+                            width: 99px;
+                            height: 17px;
+                        }
+        
+                        .product__price {
+                            font-size: 20px;
+                            font-weight: inherit;
+                            font-family: 'Work Sans', sans-serif;
+                            color: white;
+                            right: 10px;
+                            bottom: 10px;
+                            margin: 0px;
+                            padding: 0px;
+                        }
+
+                        button {
+                            width: 23px;
+                            height: 22px;
+                            background: none;
+                            border: none;
+
+
+                            img {
+                                width: 23px;
+                                height: 22px; 
+                            }
+                        }
+                    }
+                   
+                }
+
+            }
+        }
+
+
+    
+
+}
