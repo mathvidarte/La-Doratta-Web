@@ -35,7 +35,7 @@ function handleProdcutItem (item) {
     <div class="column__footer">
         <p class="product__price">${item.price}</p>
         <img src=${item.star}>
-        <button type="button"><img src="./imgs/car.png"></button>
+        <button type="button"><img src="./imgs/car.png">Agregar</button>
     </div>
     `;
     product.classList.add('product');
