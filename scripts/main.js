@@ -45,4 +45,4 @@ function handleMenu () {
     
 }
 
-menubHamburguer.addEventListener('click', handleMenu);
+menubHamburguer.addEventListener('click', handleMenu); 

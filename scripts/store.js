@@ -1,3 +1,6 @@
+const menubHamburguer = document.querySelector('.menub__hamburguer')
+const navb = document.querySelector('.menub__links')
+
 const products = [
     {
         img: 'imgs/chocolateCake.jpg',
@@ -46,3 +49,9 @@ function handleProdcutItem (item) {
 }
 
 products.forEach(handleProdcutItem)
+
+function handleMenu () {
+    
+}
+
+menubHamburguer.addEventListener('click', handleMenu);

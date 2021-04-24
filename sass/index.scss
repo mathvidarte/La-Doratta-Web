@@ -1,4 +1,5 @@
 @import 'store';
+@import 'form';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
 
@@ -272,13 +273,16 @@ body {
                 background-color: rgba(0, 0, 0, .0);
                 border: 2px solid #be8d49;
                 box-shadow: none;
-                color: #be8d49;
-                font-size: 32px;
-                font-family: 'Work Sans', sans-serif;
-                font-style: italic;
                 padding: 5px 15px 5px 10px;
                 width: 285px;
                 margin-bottom: 60px;
+                
+                    text-decoration: none;
+                    color: #be8d49;
+                    font-size: 18px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-style: italic;
+                
             }
 
             .seller__ourMenuBtn:hover {
@@ -878,7 +882,7 @@ body {
 
         ::placeholder {
             color: #eed8b8;
-            font-size: 18px;
+            font-size: 16px;
             font-family: 'Work Sans', sans-serif;
             font-weight: lighter;
         }
@@ -891,7 +895,7 @@ body {
             font-weight: lighter;
             height: 45px;
             border-radius: 5px;
-            font-size: 18px;
+            font-size: 16px;
             border: solid 2px;
         }
 
@@ -1033,8 +1037,13 @@ body {
                     }
                 }
 
+
                 .menub__logo {
-                    height: 110%;
+                    height: auto;
+                    img {
+                        margin-top: 5px;
+                        height: 50px;
+                    }
                 }
 
                 .menub__search {

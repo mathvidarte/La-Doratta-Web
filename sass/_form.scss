@@ -1,0 +1,87 @@
+//----- RESPONSIVEEEEEE -----------------
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+        .navegation{
+            .navegation_menub {
+
+                .user {
+                    height: 60%;
+                }
+            }
+           
+            
+        }
+
+        .main__form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            margin-top: 70px;
+            background: #be8d49;
+            border-radius: 30px 30px 0px 0px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+            .main__title{
+                font-family: Yeseva One;
+                color: white;
+                width: 100%;
+                font-size: 30px;
+                text-align: center;
+                margin-top: 20px;
+                    
+
+            }
+
+            .form__add {
+                margin: 0px 30px;
+
+                
+                
+
+                .form__name {
+                    display: block;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: lighter;
+                    color: white;
+                }
+
+                input {
+                    border-color: white;
+                    background-color: rgba(0, 0, 0, 0);
+                    height: 40px;
+                    border-radius: 5px;
+                    color: white;
+                    border: solid 2px;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: lighter;
+                    margin-top: 5px;
+                }
+
+                .form__addname {
+                    display: block;
+                    width: 100%;
+                    
+                }
+
+                ::placeholder {
+                    color: #eed8b8;
+                    font-size: 16px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: lighter;
+                }
+            }
+        }
+}

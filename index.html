@@ -13,8 +13,8 @@
 
         <header class="navegation">
             <div class="navigation__menua">
-                <img class="menua__logo" src="imgs/logoComplete.png">
-    
+                    <img class="menua__logo" src="imgs/logoComplete.png">
+                
                 <div class="menua__links">
                     <a href="#" class="links_about" > Sobre nosotros</a>
                     <a href="./store.html" class="links__menu">Menú</a>
@@ -35,7 +35,9 @@
 
             <div class="navegation__menub">
                 <label class="menub__hamburguer" for="menub__hamburguer"><img src="imgs/MunuB.jpg"></label>
-                <img class="menub__logo" src="imgs/logoMedium.png">
+                <a href="./index.html" class="menub__logo">
+                    <img  src="imgs/logoMedium.png">
+                </a>
                 <img class="menub__search" src="imgs/searchIcon.png"/>
             </div>
             
@@ -113,7 +115,7 @@
 
                     </div>
 
-                 <button class="seller__ourMenuBtn">NUESTRO MENÚ</button>  
+                 <button class="seller__ourMenuBtn" onclick="window.location.href = 'store.html'">NUESTRO MENÚ</button>  
             </section>
     
             <section class="main__loveDesert" style="background-image: url(imgs/cinnamonRoll.jpg);">
@@ -340,6 +342,8 @@
                 <p class="info__note">*Si necesitas algún tamaño o cantidad diferente, <a href="http://127.0.0.1:5500/Page/index.html">ponte en contacto con nosotros.</a></p>
             </section>
 
+            <!------------NEWSLETTER---------------->
+
             <section class="main__newsletter">
                 <h2>¿Quieres recibir información de nuestros productos?</h2>
                 <article class="newsletter__inputs">
@@ -414,6 +418,7 @@
         <div class="container__menu"> 
             <div class="cont__menu">
                 <nav>
+                    <a href="./index.html" class="links__home">Home</a>
                     <a href="#" class="links_about" > Sobre nosotros</a>
                     <a href="./store.html" class="links__menu">Menú</a>
                     <a href="#" class="links__contact">Contáctanos</a>
