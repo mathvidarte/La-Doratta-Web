@@ -26,31 +26,97 @@
             <h1 class="main__title">Agrega los productos</h1>
             <form action="/formResult" class="form__add">
                 <label for="name" class="form__name">
-                    Nombre del producto
-                    <input type="text" class="form__addname" placeholder="Nombre del producto" id="name">
+                    <strong> Nombre del producto</strong>
+                    <input type="text" class="form__addname" name="name" placeholder="Nombre del producto" id="name">
                 </label>
-                <label>
-                    Sabores
-                    <select class="">
-                        <option>Naranja con amapola</option>
-                        <option>Vainilla</option>
-                        <option>Chocolate</option>
-                        <option>Red Velvet</option>
-                        <option>Vino</option>
-                        <option>Limón</option>
-                        <option>Zanahoria</option>
-                        <option>Calabaza</option>
-                        <option>Canela</option>
-                        <option>Nutelña</option>
-                        <option>Noviembre</option>
-                        <option>Diciembre</option>
-                    </select>
+                <label class="form__title"> <strong>Sabores tortas</strong> 
+                    
+
+                        <input type="checkbox" class="form_checkbox" id="naranaja" name="naranja_1">
+                        <label class="sabores__all" for="naranaja">Naranaja con amapola</label>
+                        
+                        <input type="checkbox" class="form_checkbox" id="vainilla" name="vainilla_1">
+                        <label class="sabores__all" for="vainilla">Vainilla</label>
+                        
+                        <input type="checkbox" class="form_checkbox" id="chocolate" name="chocolate_1">
+                        <label class="sabores__all" for="chocolate">Chocolate</label>
+                        
+                        <input type="checkbox" class="form_checkbox" id="doublechocolate" name="doublechocolate_1">
+                        <label class="sabores__all" for="doublechocolate">Double Chocolate</label>
+                        
+                        <input type="checkbox" class="form_checkbox" id="redvelvet" name="redvelvet_1">
+                        <label class="sabores__all" for="redvelvet">  Red Velvet</label>
+                      
+                        <input type="checkbox" class="form_checkbox" id="vino" name="vino_1">
+                        <label class="sabores__all" for="vino">Vino</label>
+                    
+                    </label>
+
+                <label class="form__title">
+                    <strong> Sabores especiales</strong>
+                        <input type="checkbox" class="form_checkbox" id="zanahoria" name="zanahoria_1">
+                        <label class="sabores__all" for="zanahoria">Zanahoria</label>
+
+                        <input type="checkbox" class="form_checkbox" id="calabaza" name="calabaza_1">
+                        <label class="sabores__all" for="calabaza">Calabaza</label>
+
                 </label>
+
+                <label class="form__title">
+                    <strong>Rollitos</strong> 
+                   
+                        <input type="checkbox" class="form_checkbox" id="canela" name="canela_1">
+                        <label class="sabores__all" for="canela">Canela</label>
+                        
+                    
+                        <input type="checkbox" class="form_checkbox" id="nutella" name="nutella_1">
+                        <label class="sabores__all" for="nutella">Nutella</label>
+                       
+                </label>
+                <label class="form__title">
+                    <strong>Tamaño</strong> 
+
+                        <input type="checkbox" class="form_checkbox" id="libra" name="libra_1">
+                        <label class="sabores__all" for="libra">1 Lb</label>
+                        
+                        <input type="checkbox" class="form_checkbox" id="media" name="media_1">
+                        <label class="sabores__all" for="media"> 1/2 Lb</label>
+                      
+                        <input type="checkbox" class="form_checkbox" id="cuarto" name="cuarto_1">
+                        <label class="sabores__all" for="cuarto">1/4 Lb</label>
+
+                        <input type="checkbox" class="form_checkbox" id="tres" name="tres_1">
+                        <label class="sabores__all" for="tres">3 unidades</label>
+
+                        <input type="checkbox" class="form_checkbox" id="seis" name="seis_1">
+                        <label class="sabores__all" for="seis">6 unidades</label>
+
+                        <input type="checkbox" class="form_checkbox" id="nueve" name="nueve_1">
+                        <label class="sabores__all" for="seis">9 unidades</label>
+
+                        <input type="checkbox" class="form_checkbox" id="diez" name="diez_1">
+                        <label class="sabores__all" for="seis">10 unidades</label>
+                </label>
+                <label for="price" class="form__title">
+                    <strong> Precio</strong>
+                    <input type="text" class="form__addname" placeholder="Precio" id="price">
+                </label>
+                <label class="form__title">
+                    <strong>Descripción</strong>
+                    <textarea class="form__description" selectionStart>
+    
+                    </textarea>
+                </label>
+
+                <div class="form__btn">
+                    <button type="submit" class="btn__submit">Agregar</button>
+                </div>
+
                 
             </form>
 
         </main>
-
-    
+ 
+<script src="./scripts/productForm.js"></script>
 </body>
 </html>
