@@ -1,15 +1,28 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyD9GxahojEyG3Y6P8Y0u7sYfwChx4ip4kE",
+    authDomain: "la-doratta.firebaseapp.com",
+    projectId: "la-doratta",
+    storageBucket: "la-doratta.appspot.com",
+    messagingSenderId: "1042292077423",
+    appId: "1:1042292077423:web:c826dfbc29c00b7a746e9a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+
 const form__add = document.querySelector('.form__add');
 
 
 form__add.addEventListener('submit', function(event) {
     event.preventDefault();
-    console.log(form__add.name.value);
+
     //Crear objeto
 
     const product = {
         name: form__add.name.value,
-        price: form__add.price.value,
-        description: form__add.description.value,
+        price: parseFloat(form__add.price.value),
+        //description: form__add.description.val(),
         flavor: [],
         sizes: []
     }
@@ -31,5 +44,6 @@ form__add.addEventListener('submit', function(event) {
     if (form__add.nueve_1.checked) product.sizes.push('9 unidades');
     if (form__add.diez_1.checked) product.sizes.push('10 unidades');
 
-    
-})
+    console.log(product);
+    db.collection('products').add(product);
+});
