@@ -247,6 +247,42 @@
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
+  .main__form .main__alert {
+    position: fixed;
+    top: 300px;
+    left: 78px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    color: #be8d49;
+    background-color: white;
+    width: 60%;
+    height: 130px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+  }
+  .main__form .main__alert p {
+    margin: 20px 0px 40px 0px;
+  }
+  .main__form .main__alert .alertbtn {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #be8d49;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-size: 16px;
+    width: 160px;
+    padding: 0px;
+    margin: 0px 0px;
+    text-decoration: none;
+    color: #be8d49;
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+  }
+  .main__form .main__alert .alertbtn button:hover {
+    background: rgba(190, 141, 73, 0.2);
+  }
   .main__form .main__title {
     font-family: Yeseva One;
     color: white;
@@ -393,6 +429,10 @@
     font-size: 18px;
     border: solid #be8d49 2px;
   }
+}
+
+.hidden {
+  display: none !important;
 }
 
 body {
@@ -1735,7 +1775,7 @@ body {
     margin: 30px 0px;
   }
   .container .main__seller .seller__ourMenuBtn {
-    font-size: 18px;
+    font-size: 16px;
     width: 160px;
     padding: 0px;
     margin: 40px 0px;

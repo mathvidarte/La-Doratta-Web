@@ -1,5 +1,6 @@
 @import 'store';
 @import 'form';
+@import 'general';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
 
@@ -1168,7 +1169,7 @@ body {
             } 
             
             .seller__ourMenuBtn {
-                font-size: 18px;
+                font-size: 16px;
                 width: 160px;
                 padding: 0px;
                 margin: 40px 0px;

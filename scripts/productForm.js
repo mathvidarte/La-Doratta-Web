@@ -12,6 +12,8 @@ const firebaseConfig = {
 const db = firebase.firestore();
 
 const form__add = document.querySelector('.form__add');
+const main__alert = document.querySelector('.main__alert');
+const alertbtn = document.querySelector('.alertbtn');
 
 
 form__add.addEventListener('submit', function(event) {
@@ -45,5 +47,12 @@ form__add.addEventListener('submit', function(event) {
     if (form__add.diez_1.checked) product.sizes.push('10 unidades');
 
     console.log(product);
-    db.collection('products').add(product);
+    db.collection('products').add(product).then(function(docRef){
+        main__alert.classList.remove('hidden');
+    });
+
 });
+
+alertbtn.addEventListener('click', () => {
+    main__alert.classList.add('hidden');
+})
