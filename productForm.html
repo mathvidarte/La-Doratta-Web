@@ -28,9 +28,22 @@
                 <p>Se agregó el producto</p>
                 <button class="alertbtn" type="button">CERRAR</button>
             </div>
+            <div class="main__error hidden">
+                <p class="error__text">Ocurrió un error. Intenta de nuevo</p>
+                <button class="errorbtn" type="button">CERRAR</button>
+            </div>
             
             <h1 class="main__title">Agrega los productos</h1>
             <form action="/formResult" class="form__add">
+
+                <label for="type" class="form__type"><strong>Tipo</strong> </label>
+                <select id="type" class="type__input" name="type">
+                    <option value="">Selecciona uno</option>
+                    <option value="cake">Torta</option>
+                    <option value="cupcakes">CupCakes</option>
+                    <option value="rolls">Rollitos</option>
+                </select>
+
                 <label for="name" class="form__name">
                     <strong> Nombre del producto</strong>
                     <input type="text" class="form__addname" name="name" placeholder="Nombre del producto" id="name">

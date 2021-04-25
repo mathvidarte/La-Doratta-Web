@@ -14,7 +14,9 @@ const db = firebase.firestore();
 const form__add = document.querySelector('.form__add');
 const main__alert = document.querySelector('.main__alert');
 const alertbtn = document.querySelector('.alertbtn');
-
+const main__error =document.querySelector('.main__error');
+const error__text  = document.querySelector('.error__text');
+const errorbtn = document.querySelector('.errorbtn');
 
 form__add.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -22,6 +24,7 @@ form__add.addEventListener('submit', function(event) {
     //Crear objeto
 
     const product = {
+        type: form__add.type.value,
         name: form__add.name.value,
         price: parseFloat(form__add.price.value),
         //description: form__add.description.val(),
@@ -47,12 +50,35 @@ form__add.addEventListener('submit', function(event) {
     if (form__add.diez_1.checked) product.sizes.push('10 unidades');
 
     console.log(product);
+
+    if (!product.type || !product.name || !product.price) {
+        
+        error__text.innerHTML = `
+        <p>Debes llenar los campos requeridos</p>
+        `;
+
+        main__error.classList.remove('hidden');
+       
+    }
+    return;
+
     db.collection('products').add(product).then(function(docRef){
         main__alert.classList.remove('hidden');
+    })
+    .catch (function(error) {
+        main__error.classList.add('hidden');
     });
-
+    
 });
 
 alertbtn.addEventListener('click', () => {
     main__alert.classList.add('hidden');
+   
+});
+
+errorbtn.addEventListener('click', () => {
+    console.log('whta');
+    main__error.classList.add('hidden');
+    
 })
+
