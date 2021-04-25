@@ -42,80 +42,154 @@
                     <option value="cake">Torta</option>
                     <option value="cupcakes">CupCakes</option>
                     <option value="rolls">Rollitos</option>
+                    <option value="pie">Pies</option>
                 </select>
 
                 <label for="name" class="form__name">
                     <strong> Nombre del producto</strong>
                     <input type="text" class="form__addname" name="name" placeholder="Nombre del producto" id="name">
                 </label>
-                <label class="form__title"> <strong>Sabores tortas</strong> 
-                    
 
-                        <input type="checkbox" class="form_checkbox" id="naranaja" name="naranja_1">
-                        <label class="sabores__all" for="naranaja">Naranaja con amapola</label>
-                        
-                        <input type="checkbox" class="form_checkbox" id="vainilla" name="vainilla_1">
-                        <label class="sabores__all" for="vainilla">Vainilla</label>
-                        
-                        <input type="checkbox" class="form_checkbox" id="chocolate" name="chocolate_1">
-                        <label class="sabores__all" for="chocolate">Chocolate</label>
-                        
-                        <input type="checkbox" class="form_checkbox" id="doublechocolate" name="doublechocolate_1">
-                        <label class="sabores__all" for="doublechocolate">Double Chocolate</label>
-                        
-                        <input type="checkbox" class="form_checkbox" id="redvelvet" name="redvelvet_1">
-                        <label class="sabores__all" for="redvelvet">  Red Velvet</label>
-                      
-                        <input type="checkbox" class="form_checkbox" id="vino" name="vino_1">
-                        <label class="sabores__all" for="vino">Vino</label>
+                <div class="cakeField hidden">
+                    <label class="form__title"> <strong>Sabores tortas</strong> 
                     
+                            <input type="checkbox" class="form_checkbox" id="naranaja" name="naranja_1">
+                            <label class="sabores__all" for="naranaja">Naranaja con amapola</label>
+                            
+                            <input type="checkbox" class="form_checkbox" id="vainilla" name="vainilla_1">
+                            <label class="sabores__all" for="vainilla">Vainilla</label>
+                            
+                            <input type="checkbox" class="form_checkbox" id="chocolate" name="chocolate_1">
+                            <label class="sabores__all" for="chocolate">Chocolate</label>
+
+                            <input type="checkbox" class="form_checkbox" id="doublechocolate" name="doublechocolate_1">
+                            <label class="sabores__all" for="doublechocolate">Double Chocolate</label>
+
+                            <input type="checkbox" class="form_checkbox" id="redvelvet" name="redvelvet_1">
+                            <label class="sabores__all" for="redvelvet">  Red Velvet</label>
+                          
+                            <input type="checkbox" class="form_checkbox" id="vino" name="vino_1">
+                            <label class="sabores__all" for="vino">Vino</label>
                     </label>
 
-                <label class="form__title">
-                    <strong> Sabores especiales</strong>
-                        <input type="checkbox" class="form_checkbox" id="zanahoria" name="zanahoria_1">
-                        <label class="sabores__all" for="zanahoria">Zanahoria</label>
+                    <label class="form__title">
+                        <strong> Sabores especiales</strong>
+                            <input type="checkbox" class="form_checkbox" id="zanahoria" name="zanahoria_1">
+                            <label class="sabores__all" for="zanahoria">Zanahoria</label>
+    
+                            <input type="checkbox" class="form_checkbox" id="calabaza" name="calabaza_1">
+                            <label class="sabores__all" for="calabaza">Calabaza</label>
+    
+                    </label>
 
-                        <input type="checkbox" class="form_checkbox" id="calabaza" name="calabaza_1">
-                        <label class="sabores__all" for="calabaza">Calabaza</label>
+                    <label class="form__title">
+                        <strong>Tamaño</strong> 
+    
+                            <input type="checkbox" class="form_checkbox" id="libra" name="libra_1">
+                            <label class="sabores__all" for="libra">1 Lb</label>
+                            
+                            <input type="checkbox" class="form_checkbox" id="media" name="media_1">
+                            <label class="sabores__all" for="media"> 1/2 Lb</label>
+                          
+                            <input type="checkbox" class="form_checkbox" id="cuarto" name="cuarto_1">
+                            <label class="sabores__all" for="cuarto">1/4 Lb</label>
+                    </label>
+    
+                </div>
 
-                </label>
-
-                <label class="form__title">
-                    <strong>Rollitos</strong> 
-                   
-                        <input type="checkbox" class="form_checkbox" id="canela" name="canela_1">
-                        <label class="sabores__all" for="canela">Canela</label>
-                        
+                <div class="cupcakesField hidden">
+                    <label class="form__title"> 
+                        <strong>Sabores Cupcakes</strong> 
                     
-                        <input type="checkbox" class="form_checkbox" id="nutella" name="nutella_1">
-                        <label class="sabores__all" for="nutella">Nutella</label>
-                       
-                </label>
-                <label class="form__title">
-                    <strong>Tamaño</strong> 
-
-                        <input type="checkbox" class="form_checkbox" id="libra" name="libra_1">
-                        <label class="sabores__all" for="libra">1 Lb</label>
+                            <input type="checkbox" class="form_checkbox" id="naranaja" name="naranja_1">
+                            <label class="sabores__all" for="naranaja">Naranaja con amapola</label>
                         
-                        <input type="checkbox" class="form_checkbox" id="media" name="media_1">
-                        <label class="sabores__all" for="media"> 1/2 Lb</label>
+                            <input type="checkbox" class="form_checkbox" id="vainilla" name="vainilla_1">
+                            <label class="sabores__all" for="vainilla">Vainilla</label>
+                        
+                            <input type="checkbox" class="form_checkbox" id="chocolate" name="chocolate_1">
+                            <label class="sabores__all" for="chocolate">Chocolate</label>
+
+                            <input type="checkbox" class="form_checkbox" id="redvelvet" name="redvelvet_1">
+                            <label class="sabores__all" for="redvelvet">  Red Velvet</label>
                       
-                        <input type="checkbox" class="form_checkbox" id="cuarto" name="cuarto_1">
-                        <label class="sabores__all" for="cuarto">1/4 Lb</label>
+                    </label>
+
+                    <label class="form__title">
+                        <strong> Sabores especiales</strong>
+                            <input type="checkbox" class="form_checkbox" id="zanahoria" name="zanahoria_1">
+                            <label class="sabores__all" for="zanahoria">Zanahoria</label>
+
+                            <input type="checkbox" class="form_checkbox" id="calabaza" name="calabaza_1">
+                            <label class="sabores__all" for="calabaza">Calabaza</label>
+
+                </label>
+
+                <label class="form__title">
+                    <strong>Tamaño</strong>
 
                         <input type="checkbox" class="form_checkbox" id="tres" name="tres_1">
-                        <label class="sabores__all" for="tres">3 unidades</label>
+                        <label class="sabores__all" for="tres">3 Cupcakes</label>
 
                         <input type="checkbox" class="form_checkbox" id="seis" name="seis_1">
-                        <label class="sabores__all" for="seis">6 unidades</label>
+                        <label class="sabores__all" for="seis">6 Cupcakes</label>
 
                         <input type="checkbox" class="form_checkbox" id="nueve" name="nueve_1">
-                        <label class="sabores__all" for="seis">9 unidades</label>
+                        <label class="sabores__all" for="seis">9 Cupcakes</label>
 
                         <input type="checkbox" class="form_checkbox" id="diez" name="diez_1">
-                        <label class="sabores__all" for="seis">10 unidades</label>
+                        <label class="sabores__all" for="seis">10 mini Cupcakes</label>
                 </label>
+
+                </div>
+
+                <div class="rollsField hidden">
+                    <label class="form__title">
+                        <strong>Rollitos</strong> 
+                       
+                            <input type="checkbox" class="form_checkbox" id="canela" name="canela_1">
+                            <label class="sabores__all" for="canela">Canela</label>
+
+                            <input type="checkbox" class="form_checkbox" id="nutella" name="nutella_1">
+                            <label class="sabores__all" for="nutella">Nutella</label>
+                           
+                    </label>
+
+                    <label class="form__title">
+                        <strong>Tamaño</strong>
+    
+                            <input type="checkbox" class="form_checkbox" id="tres" name="tres_1">
+                            <label class="sabores__all" for="tres">3 Rolls</label>
+    
+                            <input type="checkbox" class="form_checkbox" id="seis" name="seis_1">
+                            <label class="sabores__all" for="seis">6 Rolls</label>
+    
+                            <input type="checkbox" class="form_checkbox" id="nueve" name="nueve_1">
+                            <label class="sabores__all" for="seis">9 Rolls</label>
+                    </label>
+                </div>
+
+                <div class="pieField hidden">
+                    <label class="form__title">
+                        <strong>Pies de Limón</strong> 
+                       
+                            <input type="checkbox" class="form_checkbox" id="pie" name="pie_1">
+                            <label class="sabores__all" for="pie">Pie de Limón</label>
+                           
+                    </label>
+
+                    <label class="form__title">
+                        <strong>Tamaño</strong>
+    
+                            <input type="checkbox" class="form_checkbox" id="uno" name="uno_1">
+                            <label class="sabores__all" for="uno">1 pie</label>
+    
+                            <input type="checkbox" class="form_checkbox" id="tresp" name="tresp_1">
+                            <label class="sabores__all" for="tresp">3 mini pies</label>
+    
+                    </label>
+                </div>
+                    
                 <label for="price" class="form__title">
                     <strong> Precio</strong>
                     <input type="text" class="form__addname" placeholder="Precio" id="price">

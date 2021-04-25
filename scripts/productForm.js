@@ -17,6 +17,34 @@ const alertbtn = document.querySelector('.alertbtn');
 const main__error =document.querySelector('.main__error');
 const error__text  = document.querySelector('.error__text');
 const errorbtn = document.querySelector('.errorbtn');
+const cakeField = document.querySelector('.cakeField');
+const cupcakesField = document.querySelector('.cupcakesField');
+const rollsField = document.querySelector('.rollsField');
+const pieField = document.querySelector('.pieField');
+
+form__add.type.addEventListener('change', function(){
+    cakeField.classList.add('hidden');
+    cupcakesField.classList.add('hidden');
+    rollsField.classList.add('hidden');
+    pieField.classList.add('hidden');
+    switch (form__add.type.value) {
+        case 'cake':
+            cakeField.classList.remove('hidden');
+        break;
+
+        case 'cupcakes':
+            cupcakesField.classList.remove('hidden');
+        break;
+
+        case 'rolls':
+            rollsField.classList.remove('hidden');
+        break;
+
+        case 'pie':
+            pieField.classList.remove('hidden');
+        break;
+    }
+})
 
 form__add.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -39,8 +67,9 @@ form__add.addEventListener('submit', function(event) {
     if (form__add.vino_1.checked) product.flavor.push('Vino');
     if (form__add.zanahoria_1.checked) product.flavor.push('Zanahoria');
     if (form__add.calabaza_1.checked) product.flavor.push('Calabaza');
-    if (form__add.canela_1.checked) product.flavor.push('canela');
+    if (form__add.canela_1.checked) product.flavor.push('Canela');
     if (form__add.nutella_1.checked) product.flavor.push('Nutella');
+    if (form__add.pie_1.checked) product.flavor.push('Limón');
     if (form__add.libra_1.checked) product.sizes.push('1 Lb');
     if (form__add.media_1.checked) product.sizes.push('1/ Lb');
     if (form__add.cuarto_1.checked) product.sizes.push('1/4 Lb');
@@ -48,6 +77,9 @@ form__add.addEventListener('submit', function(event) {
     if (form__add.seis_1.checked) product.sizes.push('6 unidades');
     if (form__add.nueve_1.checked) product.sizes.push('9 unidades');
     if (form__add.diez_1.checked) product.sizes.push('10 unidades');
+    if (form__add.uno_1.checked) product.sizes.push('Un pie');
+    if (form__add.tresp_1.checked) product.sizes.push('3 mini Pies');
+
 
     console.log(product);
 
