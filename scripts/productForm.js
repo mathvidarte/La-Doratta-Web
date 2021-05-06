@@ -27,7 +27,6 @@ const form_checkbox = document.querySelector('.form_checkbox');
 const form__images = document.querySelector('.form__images');
 
 const imagesFile = [];
-//const loadedImg = document.querySelector('.loadedImg');
 
 
 form__add.type.addEventListener('change', function(){
@@ -72,15 +71,10 @@ form__add.image.addEventListener('change', function() {
 
 form__add.addEventListener('submit', function(event) {
     event.preventDefault();
-    //Alert de cargando el producto
-    alert__text.innerHTML = `
-        <p>Cargando</p>
-        `;
-
-        main__alert.classList.remove('hidden');
+    //Alert product loading 
 
 
-    //Crear objeto
+    //create object
     const product = {
         name: form__add.name.value,
         price: parseFloat(form__add.price.value),
@@ -89,6 +83,15 @@ form__add.addEventListener('submit', function(event) {
         flavor: [],
         sizes: [],
     };
+
+    if (product.type && product.name && product.price) {
+
+        alert__text.innerHTML = `
+            <p>Cargando</p>
+            `;
+    
+            main__alert.classList.remove('hidden');
+    }
 
     switch (product.type) {
         case 'cake':
@@ -142,7 +145,7 @@ form__add.addEventListener('submit', function(event) {
 
     console.log(product);
 
-    //Si hay campos vacios
+    //if there's any input empty 
     if (!product.type || !product.name || !product.price) {
         
         error__text.innerHTML = `
@@ -153,33 +156,36 @@ form__add.addEventListener('submit', function(event) {
         return;
     }
 
-    main__error.classList.add('hidden');
+    const genericCatch = function (error) {
+        main__error.classList.add('hidden');
+        main__error.innerHTML='Ocurrió un error al cargar el producto'
+    }
 
-    //Subir el producto y las imagenes
+    //upload the porduct and imgs
     db.collection('products').add(product).then(function(docRef){
         console.log('document added', docRef.id);
 
         const uploadPromises = [];
         const downloadURLPromises = [];
 
-        //se sube al storage la imagenes
+        //images upload to firestore
         imagesFile.forEach(function(file) {
             const storageRef = firebase.storage().ref();
-            //ruta del storage
+            //storage root
             const fileRef = storageRef.child(`products/${docRef.id}/${file.name}`);
 
             uploadPromises.push(fileRef.put(file));
         });
 
-        //A las imagenes se les pide el downloadURL
+        //Get the downloadURL's images
         Promise.all(uploadPromises).then(function(snapshots) {
             snapshots.forEach(function(snapshot) {
                 downloadURLPromises.push(snapshot.ref.getDownloadURL());
             });
-            //Cuando suben todos los downloadURL
+            //Upload all downloadURL
             Promise.all (downloadURLPromises).then(function (downloadURLs) {
 
-                //Creamos el arreglo con todas las imagenes
+                //Create the array with all the images
                 const images = [];
                 downloadURLs.forEach(function(url, index) {
                     images.push({
@@ -189,48 +195,29 @@ form__add.addEventListener('submit', function(event) {
                 });
                 console.log(downloadURLs);
 
-                //Actualizar el firestore con las imagenes
+                //update firestore with images
                 db.collection('products').doc(docRef.id).update({
                     images: images
                 })
                 .then (function() {
 
-                    //alert se agregó el producto
+                    //alert product added
                     alert__text.innerHTML = `
                         <p>Se agregó el producto</p>
                         `;
 
                     main__alert.classList.remove('hidden');
                 })
+                .catch(genericCatch);
             });
         })
+        .catch(genericCatch);
     })
-    .catch (function(error) {
-        main__error.classList.add('hidden');
-    });
-
-/*
-    //subir la imagen
-    const file = form__add.image.files[0];
-
-    
-
-    //esperar que suba la imagen
-    fileRef.put(file).then(function(snapshot) {
-        snapshot.ref.getDownloadURL().then((downloadURL) => {
-            product.imageURL = downloadURL;
-            product.imageRef = snapshot.ref.fullPath;
-
-            
-        })
-    });
-    console.log(form__add.image.files);*/
-    
-
-    
-    
+    .catch (genericCatch);
 });
 
+
+//Listener de alert and error
 alertbtn.addEventListener('click', () => {
     main__alert.classList.add('hidden');
     
