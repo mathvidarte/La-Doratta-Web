@@ -1,7 +1,7 @@
 const menubHamburguer = document.querySelector('.menub__hamburguer')
 const navb = document.querySelector('.menub__links')
 
-const products = [
+/*const products = [
     {
         img: 'imgs/chocolateCake.jpg',
         title: 'Chocolate Cake',
@@ -52,32 +52,39 @@ const products = [
         price: '$24.000'
         }
     
-]
+]*/
 
 const list = document.querySelector('.mainS__list');
 
-function handleProdcutItem (item) {
+db.collection('products')
+.get()
+.then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        console.log(doc.id);
 
-    const product =document.createElement('a');
-    product.innerHTML = `
-    <div class="column__product">
-        <p class="product__title"> ${item.title}</p>
-        <p class="product__sub">${item.sub}</p>
-    </div>
-    <div class="column__footer">
-        <p class="product__price">${item.price}</p>
-        <img src=${item.star}>
-        <button type="button"><img src="./imgs/car.png">Agregar</button>
-    </div>
-    `;
-    product.classList.add('product');
-    product.setAttribute('href', '#', 'style', `background-image: url(${item.img})`);
-    product.setAttribute('style', `background-image: url(${item.img})`);
-    list.appendChild(product);
-
-}
-
-products.forEach(handleProdcutItem)
+        const product =document.createElement('a');
+        let img = data.images[0]?.url
+        if (!img) {
+            img = './imgs/noImg.png';
+        }
+        product.innerHTML = `
+        <div class="column__product">
+            <p class="product__title"> ${data.name}</p>
+            <p class="product__sub">${data.type}</p>
+        </div>
+        <div class="column__footer">
+            <p class="product__price">${data.price}</p>
+            <img src='imgs/starScore.png'>
+            <button type="button"><img src="./imgs/car.png">Agregar</button>
+        </div>
+        `;
+        product.classList.add('product');
+        
+        product.setAttribute('style', `background-image: url(${img})`);
+        list.appendChild(product);
+        });
+});
 
 function handleMenu () {
     
