@@ -1,65 +1,11 @@
 const menubHamburguer = document.querySelector('.menub__hamburguer')
 const navb = document.querySelector('.menub__links')
-
-/*const products = [
-    {
-        img: 'imgs/chocolateCake.jpg',
-        title: 'Chocolate Cake',
-        sub: 'Con ChocolateCream y Moras',
-        star: 'imgs/starScore.png',
-        price: '$25.000'
-    },
-    {
-    img: 'imgs/carrotCake.jpg',
-    title: 'Carrot Cake',
-    sub: 'Con Nueces y CheeseCream',
-    star: 'imgs/starScore.png',
-    price: '$27.000'
-    },
-    {
-    img: 'imgs/redvelvetCupcake.jpg',
-    title: 'Red Velvet',
-    sub: 'Cupcakes con ButterCream',
-    star: 'imgs/starScore.png',
-    price: '$24.000'
-    }, 
-    {
-    img: 'imgs/redvelvetCupcake.jpg',
-    title: 'Red Velvet',
-    sub: 'Cupcakes con ButterCream',
-    star: 'imgs/starScore.png',
-    price: '$24.000'
-    },
-    {
-    img: 'imgs/redvelvetCupcake.jpg',
-    title: 'Red Velvet',
-    sub: 'Cupcakes con ButterCream',
-    star: 'imgs/starScore.png',
-    price: '$24.000'
-    }, 
-    {
-    img: 'imgs/redvelvetCupcake.jpg',
-    title: 'Red Velvet',
-    sub: 'Cupcakes con ButterCream',
-    star: 'imgs/starScore.png',
-    price: '$24.000'
-    },
-    {
-        img: 'imgs/redvelvetCupcake.jpg',
-        title: 'Red Velvet',
-        sub: 'Cupcakes con ButterCream',
-        star: 'imgs/starScore.png',
-        price: '$24.000'
-        }
-    
-]*/
-
 const list = document.querySelector('.mainS__list');
+const filters = document.querySelector('.mainS__filter');
 
-db.collection('products')
-.get()
-.then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
+const handleCollectionResult = (querySnapshot) => {
+        list.innerHTML='';
+        querySnapshot.forEach((doc) => {
         const data = doc.data();
         console.log(doc.id);
 
@@ -84,7 +30,21 @@ db.collection('products')
         product.setAttribute('style', `background-image: url(${img})`);
         list.appendChild(product);
         });
+}
+
+filters.type.addEventListener('change', function() {
+    console.log(filters.type.value);
+    let productsCollection = db.collection('products');
+
+    if (filters.type.value) {
+        productsCollection = productsCollection.where('type', '==', filters.type.value);
+    }
+    productsCollection.get().then(handleCollectionResult);
 });
+
+db.collection('products')
+.get()
+.then(handleCollectionResult);
 
 function handleMenu () {
     

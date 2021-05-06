@@ -59,13 +59,13 @@
                 <button type="submit"><img src="imgs/searchIcon.png"/></button>
             </div>
 
-            <div class="mainS__filter">
-
+            <!----------FILETERS---------------->
+            <form class="mainS__filter">
                 <div class="filter__row">
-                   <label>Por tipo</label>
-                        <select class="row__type">
-                            <option>Todo</option>
-                            <option>Torta</option>
+                   <label class="filter" for="type">Por tipo</label>
+                        <select class="filter__type" name="type" id="type">
+                            <option value="">Todo</option>
+                            <option>Tortas</option>
                             <option>Cupcakes</option>
                             <option>Rolls</option>
                             <option>Pies</option>
@@ -73,7 +73,7 @@
                     
                 </div>
                 
-            </div>
+            </form>
             
             <!--------------LIST MENU-------------->
 

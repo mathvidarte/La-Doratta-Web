@@ -62,6 +62,35 @@ body {
   font-size: 25px;
 }
 
+.mainS__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 93px 0px 93px;
+}
+
+.mainS__filter .filter__row .filter {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  color: #be8d49;
+  font-weight: lighter;
+}
+
+.mainS__filter .filter__row .filter__type {
+  display: block;
+  border-color: #be8d49;
+  color: #be8d49;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: solid 2px;
+  margin-top: 10px;
+}
+
 .mainS__search {
   display: none;
 }
@@ -82,7 +111,7 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 100px 93px;
+  margin: 50px 93px;
 }
 
 .mainS__list .product {

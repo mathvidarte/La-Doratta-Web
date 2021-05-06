@@ -21,19 +21,19 @@ form__add.type.addEventListener('change', function(){
     rollsField.classList.add('hidden');
     pieField.classList.add('hidden');
     switch (form__add.type.value) {
-        case 'cake':
+        case 'Tortas':
             cakeField.classList.remove('hidden');
         break;
 
-        case 'cupcakes':
+        case 'Cupcakes':
             cupcakesField.classList.remove('hidden');
         break;
 
-        case 'rolls':
+        case 'Rolls':
             rollsField.classList.remove('hidden');
         break;
 
-        case 'pie':
+        case 'Pies':
             pieField.classList.remove('hidden');
         break;
     }
@@ -79,7 +79,7 @@ form__add.addEventListener('submit', function(event) {
     }
 
     switch (product.type) {
-        case 'cake':
+        case 'Tortas':
             product.flavor = [];
             product.sizes = [];
             if (form__add.naranja_1.checked) product.flavor.push('Naranaja con amapola');
@@ -94,7 +94,7 @@ form__add.addEventListener('submit', function(event) {
             if (form__add.media_1.checked) product.sizes.push('1/ Lb');
             if (form__add.cuarto_1.checked) product.sizes.push('1/4 Lb');
             break;
-        case 'cupcakes':
+        case 'Cupcakes':
             product.flavor = [];
             product.sizes = [];
             if (form__add.naranjac_1.checked) product.flavor.push('Naranaja con amapola');
@@ -108,7 +108,7 @@ form__add.addEventListener('submit', function(event) {
             if (form__add.nuevec_1.checked) product.sizes.push('9 Cupcakes');
             if (form__add.diezc_1.checked) product.sizes.push('10 mini Cupcakes');
             break;
-        case 'rolls':
+        case 'Rolls':
             product.flavor = [];
             product.sizes = [];
             if (form__add.canela_1.checked) product.flavor.push('Canela');
@@ -117,7 +117,7 @@ form__add.addEventListener('submit', function(event) {
             if (form__add.seisr_1.checked) product.sizes.push('6 Rolls');
             if (form__add.nuever_1.checked) product.sizes.push('9 Rolls');
             break;
-        case 'pie':
+        case 'Pies':
             product.flavor = [];
             product.sizes = [];
             if (form__add.pie_1.checked) product.flavor.push('Limón');
@@ -205,7 +205,7 @@ form__add.addEventListener('submit', function(event) {
 //Listener de alert and error
 alertbtn.addEventListener('click', () => {
     main__alert.classList.add('hidden');
-    
+    location.reload();
    
 });
 
