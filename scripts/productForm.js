@@ -57,19 +57,18 @@ form__add.image.addEventListener('change', function() {
 
 form__add.addEventListener('submit', function(event) {
     event.preventDefault();
-    //Alert product loading 
-
 
     //create object
     const product = {
         name: form__add.name.value,
         price: parseFloat(form__add.price.value),
         type: form__add.type.value,
-        //description: form__add.description.value,
+        description: form__add.description.value,
         flavor: [],
         sizes: [],
     };
 
+    //Alert product loading 
     if (product.type && product.name && product.price) {
 
         alert__text.innerHTML = `
