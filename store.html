@@ -13,6 +13,24 @@
 
         <!------------HEADER---------------->
         <header class="navegation">
+            <div class="navigation__menua">
+                <img class="menua__logo" src="imgs/logoComplete.png">
+            
+            <div class="menua__links">
+                <a href="#" class="links_about" > Sobre nosotros</a>
+                <a href="./store.html" class="links__menu">Menú</a>
+                <a href="#" class="links__contact">Contáctanos</a>
+            </div>
+
+            <div class="menua__search">
+                <input type="text" placeholder="Buscar">
+                <button type="button"><img src="imgs/searchIcon.png"/></button>
+                
+            </div>
+
+            <img class="menua__cart" src="./imgs/car.png">
+  
+        </div>
             <div class="navegation__menub">
                 <label class="menub__hamburguer" for="menub__hamburguer"><img src="imgs/MunuB.jpg"></label>
                 <a href="./index.html" class="menub__logo">   
@@ -23,27 +41,43 @@
         </header>
 
         <!------------MAIN---------------->
-        <main class="main">
+        <main class="mainS">
 
-            <div class="main__status">
+            <div class="mainS__status">
                 <a href="./index.html" class="status__home">Home > </a>
                 <a href="./store.html"><strong>Menú</strong></a>
             </div>
 
-            <div class="main__banner" style="background-image: url(./imgs/bannerStore.png);">
+            <div class="mainS__banner">
                 <h1>Productos</h1>
                 <p>Disfruta el sabor</p>
             </div>
           
 
-            <div class="main__search">
+            <div class="mainS__search">
                 <input type="text" placeholder="Buscar">
                 <button type="submit"><img src="imgs/searchIcon.png"/></button>
+            </div>
+
+            <div class="mainS__filter">
+
+                <div class="filter__row">
+                   <label>Por tipo</label>
+                        <select class="row__type">
+                            <option>Todo</option>
+                            <option>Torta</option>
+                            <option>Cupcakes</option>
+                            <option>Rolls</option>
+                            <option>Pies</option>
+                        </select>
+                    
+                </div>
+                
             </div>
             
             <!--------------LIST MENU-------------->
 
-            <section class="main__list">
+            <section class="mainS__list">
 
             </section>
             

@@ -1,3 +1,174 @@
+body{
+    background-color: #ffffff;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+//-------NAVEGATION--------
+.menua__cart {
+    width: 30px;
+    height: 30px;
+    margin-right:93px;
+}
+
+//--------MAIN-------------
+.mainS {
+    margin-top: 104px;
+
+    &__status {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: lighter;
+        margin-left: 93px;
+        margin: 10px 0px 10px 93px;
+
+        a {
+            text-decoration: none;
+            color: #be8d49;
+        }
+    }
+
+    &__banner {
+        background-image: url(/imgs/bannerStore.jpg);
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            margin: 30px 0px 10px 93px;
+            font-family: Yeseva One;
+            color: white;
+            width: 70%;
+            font-size: 79px;
+        }
+
+        p{
+            margin: 0px 0px 0px 93px;
+            font-family: 'Work Sans', sans-serif;
+            color: white;
+            font-weight: lighter;
+            font-size: 25px;
+        }
+    }
+
+    &__search {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 100px 93px;
+
+
+
+        .product {
+            width: 382px;
+            height: 253px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+            margin-bottom: 42px;
+
+            text-decoration: none;
+            
+
+            .column__product {
+                width: 100%;
+                text-align: center;
+                background-color: rgba($color: #be8d49, $alpha: .7);
+                color: black;
+
+                .product__title {
+                    font-size: 20px;
+                    font-family: Yeseva One;
+                    box-sizing: border-box;
+                    margin: 4px 0px 0px 0px; 
+                    color: black;
+                    text-align: center;
+                }
+
+                .product__sub {
+                    font-size: 15px;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: lighter;
+                    margin-top: 1px;
+                    margin-bottom: 4px;
+                }
+            }
+
+            .column__footer {
+                position: absolute;
+                bottom: 0px;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 48px;
+                justify-content: space-between;
+                align-items: center;
+                //background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(255,255,255,.0));
+                background-color:rgba(0, 0, 0, .7) ;
+                margin: 0px 0px 0px 0px;
+                padding: 10px;
+                box-sizing: border-box;
+
+                img {
+                    width: 99px;
+                    height: 17px;
+                }
+
+                .product__price {
+                    font-size: 20px;
+                    font-weight: inherit;
+                    font-family: 'Work Sans', sans-serif;
+                    color: white;
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    width: 34px;
+                    height: 33px;
+                    background: none;
+                    border: none;
+                    padding: 0px;
+                    font-size: 20px;
+                    font-weight:lighter;
+                    font-family: 'Work Sans', sans-serif;
+                    color: #be8d49;
+                    margin-right: 75px;
+                    
+                    img {
+                        width: 34px;
+                        height: 33px; 
+                        margin-right: 5px;
+                    }
+                }
+
+                
+            }
+           
+        }
+
+    }
+}
+
+
+
+
+
 //----- RESPONSIVEEEEEE -----------------
 
 
@@ -20,13 +191,14 @@
             
         }
 
-        .main {
+        .mainS {
             width: 100%;
             height: auto;
             margin-top: 70px;
 
             &__status {
-                margin: 0px 16px 20px 16px;
+                width: 200px;
+                margin: 16px 0px 10px 16px;
 
                 a {
                     text-decoration: none;
@@ -37,6 +209,8 @@
             }
 
             &__banner {
+    
+                background-image: url(/imgs/bannerStoreSmall.png);
                 width: 100%;
                 height: 230px;
                 background-size: cover;
@@ -102,6 +276,7 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+                margin: 100px 0px;
 
                 .product {
                     width: 382px;

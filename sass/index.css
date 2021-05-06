@@ -1,5 +1,198 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
+body {
+  background-color: #ffffff;
+  margin: 0px;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menua__cart {
+  width: 30px;
+  height: 30px;
+  margin-right: 93px;
+}
+
+.mainS {
+  margin-top: 104px;
+}
+
+.mainS__status {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  margin-left: 93px;
+  margin: 10px 0px 10px 93px;
+}
+
+.mainS__status a {
+  text-decoration: none;
+  color: #be8d49;
+}
+
+.mainS__banner {
+  background-image: url(/imgs/bannerStore.jpg);
+  background-size: cover;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainS__banner h1 {
+  margin: 30px 0px 10px 93px;
+  font-family: Yeseva One;
+  color: white;
+  width: 70%;
+  font-size: 79px;
+}
+
+.mainS__banner p {
+  margin: 0px 0px 0px 93px;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+.mainS__search {
+  display: none;
+}
+
+.mainS__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px 93px;
+}
+
+.mainS__list .product {
+  width: 382px;
+  height: 253px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+  margin-bottom: 42px;
+  text-decoration: none;
+}
+
+.mainS__list .product .column__product {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(190, 141, 73, 0.7);
+  color: black;
+}
+
+.mainS__list .product .column__product .product__title {
+  font-size: 20px;
+  font-family: Yeseva One;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 4px 0px 0px 0px;
+  color: black;
+  text-align: center;
+}
+
+.mainS__list .product .column__product .product__sub {
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  margin-top: 1px;
+  margin-bottom: 4px;
+}
+
+.mainS__list .product .column__footer {
+  position: absolute;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 48px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainS__list .product .column__footer img {
+  width: 99px;
+  height: 17px;
+}
+
+.mainS__list .product .column__footer .product__price {
+  font-size: 20px;
+  font-weight: inherit;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainS__list .product .column__footer button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 34px;
+  height: 33px;
+  background: none;
+  border: none;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Work Sans', sans-serif;
+  color: #be8d49;
+  margin-right: 75px;
+}
+
+.mainS__list .product .column__footer button img {
+  width: 34px;
+  height: 33px;
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 600px) {
   body {
     font-size: 16px;
@@ -11,21 +204,23 @@
   .navegation .menub__car {
     height: 70%;
   }
-  .main {
+  .mainS {
     width: 100%;
     height: auto;
     margin-top: 70px;
   }
-  .main__status {
-    margin: 0px 16px 20px 16px;
+  .mainS__status {
+    width: 200px;
+    margin: 16px 0px 10px 16px;
   }
-  .main__status a {
+  .mainS__status a {
     text-decoration: none;
     color: #be8d49;
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
   }
-  .main__banner {
+  .mainS__banner {
+    background-image: url(/imgs/bannerStoreSmall.png);
     width: 100%;
     height: 230px;
     background-size: cover;
@@ -37,14 +232,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main__banner h1 {
+  .mainS__banner h1 {
     margin: 40px 0px 0px 16px;
     font-family: Yeseva One;
     color: white;
     width: 70%;
     font-size: 40px;
   }
-  .main__banner p {
+  .mainS__banner p {
     margin: 0px 0px 5px 16px;
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
@@ -52,7 +247,7 @@
     width: 70%;
     font-size: 25px;
   }
-  .main__search {
+  .mainS__search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -65,7 +260,7 @@
             justify-content: center;
     margin: 20px 16px;
   }
-  .main__search input {
+  .mainS__search input {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -73,40 +268,40 @@
     color: #be8d49;
     width: 70%;
   }
-  .main__search ::-webkit-input-placeholder {
+  .mainS__search ::-webkit-input-placeholder {
     color: #f0e3d0;
     font-size: 18px;
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
   }
-  .main__search :-ms-input-placeholder {
+  .mainS__search :-ms-input-placeholder {
     color: #f0e3d0;
     font-size: 18px;
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
   }
-  .main__search ::-ms-input-placeholder {
+  .mainS__search ::-ms-input-placeholder {
     color: #f0e3d0;
     font-size: 18px;
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
   }
-  .main__search ::placeholder {
+  .mainS__search ::placeholder {
     color: #f0e3d0;
     font-size: 18px;
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
   }
-  .main__search button {
+  .mainS__search button {
     background-color: white;
     border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .main__search button img {
+  .mainS__search button img {
     width: 20px;
   }
-  .main__list {
+  .mainS__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -118,8 +313,9 @@
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    margin: 100px 0px;
   }
-  .main__list .product {
+  .mainS__list .product {
     width: 382px;
     height: 253px;
     background-size: cover;
@@ -136,13 +332,13 @@
     margin-bottom: 42px;
     text-decoration: none;
   }
-  .main__list .product .column__product {
+  .mainS__list .product .column__product {
     width: 100%;
     text-align: center;
     background-color: rgba(190, 141, 73, 0.7);
     color: black;
   }
-  .main__list .product .column__product .product__title {
+  .mainS__list .product .column__product .product__title {
     font-size: 20px;
     font-family: Yeseva One;
     -webkit-box-sizing: border-box;
@@ -151,14 +347,14 @@
     color: black;
     text-align: center;
   }
-  .main__list .product .column__product .product__sub {
+  .mainS__list .product .column__product .product__sub {
     font-size: 15px;
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
     margin-top: 1px;
     margin-bottom: 4px;
   }
-  .main__list .product .column__footer {
+  .mainS__list .product .column__footer {
     position: absolute;
     bottom: 0px;
     display: -webkit-box;
@@ -182,11 +378,11 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .main__list .product .column__footer img {
+  .mainS__list .product .column__footer img {
     width: 99px;
     height: 17px;
   }
-  .main__list .product .column__footer .product__price {
+  .mainS__list .product .column__footer .product__price {
     font-size: 20px;
     font-weight: inherit;
     font-family: 'Work Sans', sans-serif;
@@ -194,7 +390,7 @@
     margin: 0px;
     padding: 0px;
   }
-  .main__list .product .column__footer button {
+  .mainS__list .product .column__footer button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -213,11 +409,342 @@
     color: #be8d49;
     margin-right: 75px;
   }
-  .main__list .product .column__footer button img {
+  .mainS__list .product .column__footer button img {
     width: 34px;
     height: 33px;
     margin-right: 5px;
   }
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0px;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 120px;
+  background: #be8d49;
+  border-radius: 30px 30px 0px 0px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main__form .main__alert {
+  position: fixed;
+  top: 300px;
+  left: 290px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  color: #be8d49;
+  background-color: white;
+  width: 60%;
+  height: 130px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+}
+
+.main__form .main__alert .alert__text {
+  margin: 20px 0px 40px 0px;
+}
+
+.main__form .main__alert .alertbtn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #be8d49;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  width: 160px;
+  padding: 0px;
+  margin: 0px 0px;
+  text-decoration: none;
+  color: #be8d49;
+  font-family: 'Work Sans', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.main__form .main__alert .alertbtn button:hover {
+  background: rgba(190, 141, 73, 0.2);
+}
+
+.main__form .main__error {
+  position: fixed;
+  top: 300px;
+  left: 290px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  color: #be8d49;
+  background-color: white;
+  width: 60%;
+  height: 130px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+}
+
+.main__form .main__error .error__text {
+  margin: 20px 0px 40px 0px;
+}
+
+.main__form .main__error .errorbtn {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #be8d49;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  width: 160px;
+  padding: 0px;
+  margin: 0px 0px;
+  text-decoration: none;
+  color: #be8d49;
+  font-family: 'Work Sans', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.main__form .main__error .errorbtn button:hover {
+  background: rgba(190, 141, 73, 0.2);
+}
+
+.main__form .main__title {
+  font-family: Yeseva One;
+  color: white;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main__form .form__add {
+  margin: 0px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.main__form .form__add .form__type + .type__input {
+  display: block;
+}
+
+.main__form .form__add .form__type {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+.main__form .form__add .type__input {
+  border-color: white;
+  color: #f0e3d0;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  border: solid 2px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.main__form .form__add .form__name {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+.main__form .form__add input {
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0);
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  border: solid 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
+.main__form .form__add .form__addname {
+  display: block;
+  width: 100%;
+}
+
+.main__form .form__add ::-webkit-input-placeholder {
+  color: #eed8b8;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.main__form .form__add :-ms-input-placeholder {
+  color: #eed8b8;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.main__form .form__add ::-ms-input-placeholder {
+  color: #eed8b8;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.main__form .form__add ::placeholder {
+  color: #eed8b8;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.main__form .form__add .form__title {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  color: white;
+  margin: 10px 0px;
+}
+
+.main__form .form__add .form__title .form_checkbox + .sabores__all {
+  display: block;
+  margin: 5px;
+  padding-top: 0.2;
+}
+
+.main__form .form__add .form__title .form_checkbox {
+  display: none;
+}
+
+.main__form .form__add .form__title .form_checkbox + .sabores__all::before {
+  content: "\2714";
+  border: 2px solid white;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 5px;
+  color: transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main__form .form__add .form__title .form_checkbox + .sabores__all:active::before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.main__form .form__add .form__title .form_checkbox:checked + .sabores__all::before {
+  background-color: white;
+  color: #be8d49;
+}
+
+.main__form .form__add .form__title .form__description {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.main__form .form__add .form__title .uploadpic {
+  font-size: 14px;
+  font-weight: 600;
+  color: #be8d49;
+  background-color: white;
+  display: block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+  padding: 15px 40px !important;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin: 5px 0px 60px 0px;
+  border-radius: 5px;
+}
+
+.main__form .form__add .form__title .uploadpic .form__pic {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.main__form .form__add .form__title .form__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0px;
+}
+
+.main__form .form__add .form__title .loadedImg {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.main__form .form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__form .form__btn .btn__submit {
+  width: 100%;
+  height: 45px;
+  color: #be8d49;
+  background-color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -240,7 +767,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-top: 70px;
     background: #be8d49;
     border-radius: 30px 30px 0px 0px;
@@ -329,6 +856,7 @@
   }
   .main__form .form__add {
     margin: 0px 16px;
+    width: auto;
   }
   .main__form .form__add .form__type + .type__input {
     display: block;
@@ -410,7 +938,6 @@
   .main__form .form__add .form__title .form_checkbox + .sabores__all {
     display: block;
     margin: 5px;
-    cursor: pointer;
     padding-top: 0.2;
   }
   .main__form .form__add .form__title .form_checkbox {
@@ -451,8 +978,43 @@
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-top: 5px;
+  }
+  .main__form .form__add .form__title .uploadpic {
+    font-size: 14px;
+    font-weight: 600;
+    color: #be8d49;
+    background-color: white;
+    display: block;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 15px 40px !important;
+    text-transform: uppercase;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    margin: 5px 0px 100px 0px;
+    border-radius: 5px;
+  }
+  .main__form .form__add .form__title .uploadpic .form__pic {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .main__form .form__add .form__title .form__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__form .form__add .form__title .loadedImg {
+    width: 100px;
+    display: block;
   }
   .main__form .form__btn {
     display: -webkit-box;

@@ -22,10 +22,39 @@ const products = [
     sub: 'Cupcakes con ButterCream',
     star: 'imgs/starScore.png',
     price: '$24.000'
-    }
+    }, 
+    {
+    img: 'imgs/redvelvetCupcake.jpg',
+    title: 'Red Velvet',
+    sub: 'Cupcakes con ButterCream',
+    star: 'imgs/starScore.png',
+    price: '$24.000'
+    },
+    {
+    img: 'imgs/redvelvetCupcake.jpg',
+    title: 'Red Velvet',
+    sub: 'Cupcakes con ButterCream',
+    star: 'imgs/starScore.png',
+    price: '$24.000'
+    }, 
+    {
+    img: 'imgs/redvelvetCupcake.jpg',
+    title: 'Red Velvet',
+    sub: 'Cupcakes con ButterCream',
+    star: 'imgs/starScore.png',
+    price: '$24.000'
+    },
+    {
+        img: 'imgs/redvelvetCupcake.jpg',
+        title: 'Red Velvet',
+        sub: 'Cupcakes con ButterCream',
+        star: 'imgs/starScore.png',
+        price: '$24.000'
+        }
+    
 ]
 
-const list = document.querySelector('.main__list');
+const list = document.querySelector('.mainS__list');
 
 function handleProdcutItem (item) {
 
