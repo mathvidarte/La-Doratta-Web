@@ -20,7 +20,7 @@ const handleCollectionResult = (querySnapshot) => {
             <p class="product__sub">${data.type}</p>
         </div>
         <div class="column__footer">
-            <p class="product__price">${data.price}</p>
+            <p class="product__price">$${data.price}</p>
             <img src='imgs/starScore.png'>
             <button type="button"><img src="./imgs/car.png">Agregar</button>
         </div>
@@ -32,13 +32,36 @@ const handleCollectionResult = (querySnapshot) => {
         });
 }
 
-filters.type.addEventListener('change', function() {
-    console.log(filters.type.value);
+filters.addEventListener('change', function() {
+    console.log('tipo: ', filters.type.value);
+    console.log('sabor: ', filters.flavor.value);
+    console.log('precio: ', filters.price.value);
+
     let productsCollection = db.collection('products');
 
     if (filters.type.value) {
         productsCollection = productsCollection.where('type', '==', filters.type.value);
     }
+
+    if (filters.flavor.value) {
+        productsCollection = productsCollection.where('flavor', '==', filters.flavor.value);
+    }
+
+    if (filters.price.value) {
+        switch (filters.price.value) {
+            case '0':
+                productsCollection = productsCollection.where('price', '<', 25000); 
+                break;
+            case '1':
+                productsCollection = productsCollection.where('price', '>=', 25000).where('price', '<=', 50000);
+                break;
+            case '2':
+                productsCollection = productsCollection.where('price', '>', 50000);
+                break;
+        }
+
+    }
+
     productsCollection.get().then(handleCollectionResult);
 });
 

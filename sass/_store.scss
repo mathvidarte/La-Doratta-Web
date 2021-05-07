@@ -58,22 +58,28 @@ body{
 
     &__filter {
         display: flex;
-        margin: 50px 93px 0px 93px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 50px 0px;
+        background-color:#be8d49 ;
+        padding: 50px 0px 50px 0px;
 
         .filter__row {
-
-            .filter {
-                display: block;
-                font-family: 'Work Sans', sans-serif;
-                color: #be8d49;
-                font-weight: lighter;
+            display: flex;
+            flex-direction: row;
+            font-family: 'Work Sans', sans-serif;
+            color: white;
+            font-weight: lighter;
                 
-
-
-                &__type {
-                    display: block;
-                    border-color: #be8d49;
-                    color: #be8d49;
+           .filter__label {
+                color: white;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: lighter;
+           }
+                
+                .filter__input {
+                    border: white;
+                    color: white;
                     background-color: rgba(0, 0, 0, .0);
                     font-family: 'Work Sans', sans-serif;
                     font-weight: lighter;
@@ -82,8 +88,32 @@ body{
                     border-radius: 5px;
                     font-size: 16px;
                     border: solid 2px;
-                    margin-top: 10px;
+                    margin: 0px 20px;
                 }
+
+        }
+
+        .order__row {
+            margin-top: 20px;
+            .order__label {
+                color: white;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: lighter;
+            }
+
+            .order__input {
+                border: white;
+                color: white;
+                background-color: rgba(0, 0, 0, .0);
+                font-family: 'Work Sans', sans-serif;
+                font-weight: lighter;
+                height: 30px;
+                width: 200px;
+                border-radius: 5px;
+                font-size: 16px;
+                border: solid 2px;
+                margin: 0px 20px;
+
             }
         }
     }
