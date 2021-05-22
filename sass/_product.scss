@@ -1,0 +1,168 @@
+.article {
+    background-image: url(../imgs/carrotCake.jpg);
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    display: flex;
+    flex-direction: column;
+    background-position-x: left;
+    margin: 0px 93px 0px 0px;
+    
+
+    &__img {
+        //background-image: url(../imgs/carrotCake.jpg);
+        display: none;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        background-color: #be8d49;
+        color: white;
+        justify-content: space-between;
+        margin-left: 50%;
+        
+        
+        .info__tittle{
+            font-family: Yeseva One;
+            font-size: 73px;
+            margin: 10px 20px 0px 20px;
+        }
+
+        .info__description {
+            margin: 10px 20px 0px 20px;
+            font-family: 'Work Sans', sans-serif;
+            font-style: italic;
+            font-weight: lighter;
+            color: #ffebc4
+        }
+
+        .info__price {
+            margin: 20px 20px 0px 20px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: lighter;
+            font-style: italic;
+            color: white;
+            font-size: 40px;
+        }
+
+        .infoqty {
+            display: flex;
+            margin: 10px 20px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: lighter;
+            color: white;
+            align-items: center;
+
+                &__label {
+                    margin: 0px 10px 0px 0px;
+                    font-size: 18px;
+                }
+
+                &__select {
+                    border: white;
+                   color: white;
+                   background-color: rgba(0, 0, 0, .0);
+                   font-family: 'Work Sans', sans-serif;
+                   font-weight: lighter;
+                   height: 30px;
+                   width: 200px;
+                   border-radius: 5px;
+                   font-size: 16px;
+                   border: solid 2px;
+                }
+        }
+
+        .infobtn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            .info__btn {
+                background-color: rgba(0, 0, 0, .0);
+                border: 2px solid white;
+                box-shadow: none;
+                padding: 5px 0px 5px 10px;
+                width: 285px;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                font-family: 'Work Sans', sans-serif;
+                font-style: italic;
+                align-content: center;
+    
+    
+                img {
+                    width: 25px;
+                    margin-left: 10px;
+                }
+            }
+
+            :hover {
+                background: rgba($color: #ffffff, $alpha: .3);
+            }
+        }
+
+
+    }
+}
+
+.articleInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 40px 0px 0px 93px;
+
+    &__tagOne {
+        font-family: Yeseva One;
+        font-size: 35px;
+        color: #be8d49;
+        margin: 0px;
+
+        &--black {
+            color: black;
+            margin-top: 0px;
+        }
+    }
+
+    &__title {
+        font-family: Yeseva One;
+        font-size: 20px;
+        color: #be8d49;
+        margin: 60px 0px 0px 0px;
+    }
+
+    &__line {
+        width: 50%;
+        height: 1px;
+        background-color:#be8d49 ;
+    }
+
+    &__bodyText {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: lighter;
+        color: #be8d49;
+        width: 50%;
+    }
+
+    
+
+}
+
+//-----------------------RESPONSIVE------------------------------
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    
+}
+

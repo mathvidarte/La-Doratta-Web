@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/index.css">
+    <title>Producto</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!------------HEADER---------------->
+        <header class="navegation">
+            <div class="navigation__menua">
+                <a href="./index.html" class="menua__logo">
+                    <img src="imgs/logoComplete.png" >
+                </a>
+                
+            
+                <div class="menua__links">
+                    <a href="#" class="links_about" > Sobre nosotros</a>
+                    <a href="./store.html" class="links__menu">Menú</a>
+                    <a href="#" class="links__contact">Contáctanos</a>
+                </div>
+
+                <div class="menua__search">
+                    <input type="text" placeholder="Buscar">
+                    <button type="button"><img src="imgs/searchIcon.png"/></button>
+                    
+                </div>
+
+                <img class="menua__cart" src="./imgs/car.png">
+  
+            </div>
+            <div class="navegation__menub">
+                <label class="menub__hamburguer" for="menub__hamburguer"><img src="imgs/MunuB.jpg"></label>
+                <a href="./index.html" class="menub__logo">   
+                    <img  src="imgs/logoMedium.png">
+                </a>
+                <img class="menub__car" src="imgs/car.png"/>
+            </div>
+        </header>
+
+        <!------------MAIN---------------->
+        <main class="mainS">
+
+            <div class="mainS__status">
+                <a href="./index.html" class="status__home">Home > </a>
+                <a href="./store.html">Menú ></a>
+                <a><strong>Nombre del producto</strong></a>
+            </div>
+
+            <article class="mainS__article article">
+                <img class="article__img" src="./imgs/carrotCake.jpg">
+                <div class="article__info">
+                    <h1 class="info__tittle">Carrot Cake</h1>
+                    <p class="info__description">Torta de zanahoría con nueces y un relleno de un delicioso y suave CheessCream decorada con un camino de nueces.</p>
+                    <p class="info__price">$38.000</p>
+                    <div class="infoqty">
+                        <label class="infoqty__label">Cantidad</label>
+                        <select class="infoqty__select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>+5</option>
+                        </select>
+                    </div>
+                    <div class="infobtn">
+                        <button type="button" class="info__btn">Agregar al carrito<img src="./imgs/cardWhite.png"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="articleInfo">
+                <h1 class="articleInfo__tagOne">Nosotros horneamos.</h1>
+                <h1 class="articleInfo__tagOne articleInfo__tagOne--black">Tu disfrutas del sabor.</h1>
+                <p class="articleInfo__title">Ingredientes</p>
+                <div class="articleInfo__line"></div>
+                <p class="articleInfo__bodyText">Harina, mantequilla, azucar, huevos, esencia.</p>
+                <h1 class="articleInfo__title">Detalles del envio</h1>
+                <div class="articleInfo__line"></div>
+                <p class="articleInfo__bodyText">Disponible solamente en la ciudad de Cali. La tarifa del envió varia dependiendo del destino</p>
+            </article>
+
+            <article class="recommended">
+                <section class="main__seller">
+
+                    <h2> Recomendados </h2>
+    
+                    <!-------------GALERY----------->
+                        <div class="products-row">
+    
+                            <!-------------LEFT----------->
+                            <article class="products-row__column" style="background-image: url(imgs/carrotCake.jpg);"> 
+                                <div class="column__product">
+                                    <p class="product__title"> CarrotCake</p>
+                                    <p class="product__sub">Con nueces y CheeseCream</p>
+                                </div>
+                                <div class="column__footer">
+                                    <img src="imgs/starScore.png">
+                                    <p class="product__price"> $27.000</p>
+                                </div>
+                            </article>
+    
+                            <!-------------MIDDLE----------->
+                            <article class="products-row__column products-row__column--main" style="background-image: url(imgs/chocolateCake.jpg);">
+                                <div class="column__product column__product--gold" >
+                                    <p class="product__title product__title--choco" > Chocolate Cake</p>
+                                    <p class="product__sub product__sub--size">Con ChocolateCream y Moras</p>
+                                </div>
+                                <div class="column__footer column__footer--margin">
+                                    <img src="imgs/starScore.png">
+                                    <p class="product__price product__price--size"> $25.000</p>
+                                </div>
+                            </article>
+    
+                            <!-------------RIGHT----------->
+                            <article class="products-row__column products-row__column--righ" style="background-image: url(imgs/redvelvetCupcake.jpg);">
+                                <div class="column__product column__product" >
+                                    <p class="product__title" > Red Velvet </p>
+                                    <p class="product__sub product__sub">Cupcakes con ButterCream</p>
+                                </div>
+                                 <div class="column__footer column__footer">
+                                    <img src="imgs/starScore.png">
+                                    <p class="product__price"> $24.000</p>
+                                </div>
+                            </article>
+    
+                        </div>
+    
+                     <button class="seller__ourMenuBtn" onclick="window.location.href = 'store.html'">VOLVER AL</button>  
+                </section>
+            </article>
+
+            <footer class="footer">
+                <img src="imgs/logoComplete.png">
+                <div class="menu__networks--respo">
+                    <img class="networks__wa" src="imgs/waLogo.png">
+                    <img class="networks__ig" src="imgs/igLogo.png">
+                </div>
+                <section>
+                    <a href="https://www.google.com/maps/place/Cra.+64a+%2311a-30,+Cali,+Valle+del+Cauca/@3.4007893,-76.5414533,17z/data=!3m1!4b1!4m5!3m4!1s0x8e30a152468fa0ff:0xdf424cf6a15a1382!8m2!3d3.4007839!4d-76.5392593">¿Dónde estamos ubicados?</a>
+                    <p> Carrera 64a #11a-30 El limonar, Cali, Colombia</p>
+                    <p>+57 3205036398 / ladoratta@gmail.com</p>
+                    <p>Copyright 2019 <strong>la doratta</strong></p>
+                </section>
+            </footer>
+
+    </div>
+
+
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
+        <script src="./scripts/general.js"></script>
+</body>
+</html>

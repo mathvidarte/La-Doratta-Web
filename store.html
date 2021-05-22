@@ -14,23 +14,26 @@
         <!------------HEADER---------------->
         <header class="navegation">
             <div class="navigation__menua">
-                <img class="menua__logo" src="imgs/logoComplete.png">
-            
-            <div class="menua__links">
-                <a href="#" class="links_about" > Sobre nosotros</a>
-                <a href="./store.html" class="links__menu">Menú</a>
-                <a href="#" class="links__contact">Contáctanos</a>
-            </div>
-
-            <div class="menua__search">
-                <input type="text" placeholder="Buscar">
-                <button type="button"><img src="imgs/searchIcon.png"/></button>
+                <a href="./index.html" class="menua__logo">
+                    <img src="imgs/logoComplete.png" >
+                </a>
                 
-            </div>
+            
+                <div class="menua__links">
+                    <a href="#" class="links_about" > Sobre nosotros</a>
+                    <a href="./store.html" class="links__menu">Menú</a>
+                    <a href="#" class="links__contact">Contáctanos</a>
+                </div>
 
-            <img class="menua__cart" src="./imgs/car.png">
+                <div class="menua__search">
+                    <input type="text" placeholder="Buscar">
+                    <button type="button"><img src="imgs/searchIcon.png"/></button>
+                    
+                </div>
+
+                <img class="menua__cart" src="./imgs/car.png">
   
-        </div>
+            </div>
             <div class="navegation__menub">
                 <label class="menub__hamburguer" for="menub__hamburguer"><img src="imgs/MunuB.jpg"></label>
                 <a href="./index.html" class="menub__logo">   
@@ -41,6 +44,9 @@
         </header>
 
         <!------------MAIN---------------->
+
+
+
         <main class="mainS">
 
             <div class="mainS__status">
@@ -60,56 +66,130 @@
             </div>
 
             <!----------FILETERS---------------->
-            <form class="mainS__filter">
-                <div class="filter__row">
+            <form class="mainS__filter mainS__filter--show">
+                <div class="filter__row filter__row--show">
                     <label class="filter__label">Filtrar por:</label>
-                        <select class="filter__input" name="type" id="type">
-                            <option value="">Tipo</option>
-                            <option>Tortas</option>
-                            <option>Cupcakes</option>
-                            <option>Rolls</option>
-                            <option>Pies</option>
-                        </select>
+                        <div class="filter__all filter__all--show">
 
-                         <select class="filter__input" name="flavor" id="flavor">
-                             <option value="">Sabor</option>
-                             <option value="Naranja con amapola">Naranja</option>
-                             <option value="Vainilla">Vainilla</option>
-                             <option value="Chocolate">Chocolate</option>
-                             <option value="Red Velvet">Red Velvet</option>
-                             <option value="Vino">Vino</option>
-                             <option value="Zanahoria">Zanahoria</option>
-                             <option value="Calabaza">Calabaza</option>
-                             <option value="Canela">Canela</option>
-                             <option value="Nuetella">Nutella</option>
-                             <option value="Limón">Limón</option>
-                         </select>
-                     
-                         <select class="filter__input" name="price" id="price">
-                             <option value="">Precio</option>
-                             <option value="0">Menos de $25.000</option>
-                             <option value="1">Entre $25.000 y $50.000</option>
-                             <option value="2">Más de $50.000</option>
-                         </select>
+                            <select class="filter__input" name="type" id="type">
+                                <option value="">Tipo</option>
+                                <option>Tortas</option>
+                                <option>Cupcakes</option>
+                                <option>Rolls</option>
+                                <option>Pies</option>
+                            </select>
+    
+                             <select class="filter__input" name="flavor" id="flavor">
+                                 <option value="">Sabor</option>
+                                 <option value="Naranja con amapola">Naranja</option>
+                                 <option value="Vainilla">Vainilla</option>
+                                 <option value="Chocolate">Chocolate</option>
+                                 <option value="Red Velvet">Red Velvet</option>
+                                 <option value="Vino">Vino</option>
+                                 <option value="Zanahoria">Zanahoria</option>
+                                 <option value="Calabaza">Calabaza</option>
+                                 <option value="Canela">Canela</option>
+                                 <option value="Nuetella">Nutella</option>
+                                 <option value="Limón">Limón</option>
+                             </select>
+                         
+                             <select class="filter__input" name="price" id="price">
+                                 <option value="">Precio</option>
+                                 <option value="0">Menos de $25.000</option>
+                                 <option value="1">Entre $25.000 y $50.000</option>
+                                 <option value="2">Más de $50.000</option>
+                             </select>
+                        </div>
                  </div>
 
-                 <div class="order__row">
+                 <div class="order__row order__row--show">
                      <label for="oPrice" class="order__label">Ordenar por:</label>
-                     <select class="order__input" name="oPrice" id="oPrice">
-                         <option>Precio</option>
-                         <option>Mayor a menor precio</option>
-                         <option>Menor a mayor precio</option>
-                     </select>
-
-                     <select class="order__input" name="name" id="name">
-                        <option>Nombre</option>
-                        <option>De la A - Z</option>
-                        <option>De la Z - A</option>
-                    </select>
+                     <div class="order__all order__all--show">
+                         
+                         <select class="order__input" name="orderPrice" id="orderPrice">
+                             <option value="">Precio</option>
+                             <option value="price__desc">Mayor a menor precio</option>
+                             <option value="price__asc">Menor a mayor precio</option>
+                         </select>
+    
+                         <select class="order__input" name="orderName" id="orderName">
+                            <option value="">Nombre</option>
+                            <option value="name__asc">De la A - Z</option>
+                            <option value="name__desc">De la Z - A</option>
+                        </select>
+    
+                        
+                     </div>
 
                  </div>
                 
             </form>
+
+            <div class="mainS__filter--respo">
+                <button type="button" class="filterBtn">FILTRAR Y ORDENAR</button>
+            </div>
+
+            <div class="filterPopUp">
+                <form class="mainS__filter mainS__filter--show">
+                    <div class="filter__row filter__row--show">
+                        <label class="filter__label">Filtrar por:</label>
+                            <div class="filter__all filter__all--show">
+    
+                                <select class="filter__input" name="type" id="type">
+                                    <option value="">Tipo</option>
+                                    <option>Tortas</option>
+                                    <option>Cupcakes</option>
+                                    <option>Rolls</option>
+                                    <option>Pies</option>
+                                </select>
+        
+                                 <select class="filter__input" name="flavor" id="flavor">
+                                     <option value="">Sabor</option>
+                                     <option value="Naranja con amapola">Naranja</option>
+                                     <option value="Vainilla">Vainilla</option>
+                                     <option value="Chocolate">Chocolate</option>
+                                     <option value="Red Velvet">Red Velvet</option>
+                                     <option value="Vino">Vino</option>
+                                     <option value="Zanahoria">Zanahoria</option>
+                                     <option value="Calabaza">Calabaza</option>
+                                     <option value="Canela">Canela</option>
+                                     <option value="Nuetella">Nutella</option>
+                                     <option value="Limón">Limón</option>
+                                 </select>
+                             
+                                 <select class="filter__input" name="price" id="price">
+                                     <option value="">Precio</option>
+                                     <option value="0">Menos de $25.000</option>
+                                     <option value="1">Entre $25.000 y $50.000</option>
+                                     <option value="2">Más de $50.000</option>
+                                 </select>
+                            </div>
+                     </div>
+    
+                     <div class="order__row order__row--show">
+                         <label for="oPrice" class="order__label">Ordenar por:</label>
+                         <div class="order__all order__all--show">
+                             
+                             <select class="order__input" name="orderPrice" id="orderPrice">
+                                 <option value="">Precio</option>
+                                 <option value="price__desc">Mayor a menor precio</option>
+                                 <option value="price__asc">Menor a mayor precio</option>
+                             </select>
+        
+                             <select class="order__input" name="orderName" id="orderName">
+                                <option value="">Nombre</option>
+                                <option value="name__asc">De la A - Z</option>
+                                <option value="name__desc">De la Z - A</option>
+                            </select>
+        
+                            
+                         </div>
+    
+                     </div>
+                    
+                </form>
+            </div>
+            
             
             <!--------------LIST MENU-------------->
 
@@ -148,6 +228,8 @@
                 <label class="menu__close" for="menub__hamburguer"><img src="imgs/close.png"></label>
             </div>
         </div>
+
+        
 
         
 

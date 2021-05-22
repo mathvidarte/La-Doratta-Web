@@ -82,7 +82,7 @@ form__add.addEventListener('submit', function(event) {
         case 'Tortas':
             product.flavor = [];
             product.sizes = [];
-            if (form__add.naranja_1.checked) product.flavor.push('Naranaja con amapola');
+            if (form__add.naranja_1.checked) product.flavor.push('Naranja con amapola');
             if (form__add.vainilla_1.checked) product.flavor.push('Vainilla');
             if (form__add.chocolate_1.checked) product.flavor.push('Chocolate');
             if (form__add.doublechocolate_1.checked) product.flavor.push('Double Chocolate');
@@ -97,7 +97,7 @@ form__add.addEventListener('submit', function(event) {
         case 'Cupcakes':
             product.flavor = [];
             product.sizes = [];
-            if (form__add.naranjac_1.checked) product.flavor.push('Naranaja con amapola');
+            if (form__add.naranjac_1.checked) product.flavor.push('Naranja con amapola');
             if (form__add.vainillac_1.checked) product.flavor.push('Vainilla');
             if (form__add.chocolatec_1.checked) product.flavor.push('Chocolate');
             if (form__add.redvelvetc_1.checked) product.flavor.push('Red Velvet');

@@ -2,6 +2,9 @@ const menubHamburguer = document.querySelector('.menub__hamburguer')
 const navb = document.querySelector('.menub__links')
 const list = document.querySelector('.mainS__list');
 const filters = document.querySelector('.mainS__filter');
+const filterPopUp = document.querySelector('.filterPopUp');
+const filterBtn = document.querySelector('.filterBtn');
+
 
 const handleCollectionResult = (querySnapshot) => {
         list.innerHTML='';
@@ -28,7 +31,10 @@ const handleCollectionResult = (querySnapshot) => {
         product.classList.add('product');
         
         product.setAttribute('style', `background-image: url(${img})`);
+        product.setAttribute('href', `./product.html?id=${doc.id}&name=${data.name}`);
         list.appendChild(product);
+
+        console.log(data.name);
         });
 }
 
@@ -44,7 +50,7 @@ filters.addEventListener('change', function() {
     }
 
     if (filters.flavor.value) {
-        productsCollection = productsCollection.where('flavor', '==', filters.flavor.value);
+        productsCollection = productsCollection.where('flavor', 'array-contains', filters.flavor.value);
     }
 
     if (filters.price.value) {
@@ -59,7 +65,34 @@ filters.addEventListener('change', function() {
                 productsCollection = productsCollection.where('price', '>', 50000);
                 break;
         }
+       
+    }
+    if (filters.orderPrice.value) {
+        switch (filters.orderPrice.value) {
+            case 'price__desc':
+                productsCollection = productsCollection.orderBy('price', 'desc'); 
+                break;
+            case 'price__asc':
+                productsCollection = productsCollection.orderBy('price', 'asc');
+                break;
+        }
+    }
 
+    if (filters.orderName.value) {
+        switch (filters.orderName.value) {
+            case 'name__asc':
+                if (filters.price.value) {
+                    productsCollection = productsCollection.orderBy('price', 'asc');
+                }
+                productsCollection = productsCollection.orderBy('name', 'asc'); 
+                break;
+            case 'name__desc':
+                if (filters.price.value) {
+                    productsCollection = productsCollection.orderBy('price', 'desc'); 
+                }
+                productsCollection = productsCollection.orderBy('name', 'desc');
+                break;
+        }
     }
 
     productsCollection.get().then(handleCollectionResult);
@@ -74,3 +107,7 @@ function handleMenu () {
 }
 
 menubHamburguer.addEventListener('click', handleMenu);
+
+filterBtn.addEventListener ('click', function() {
+    
+})
