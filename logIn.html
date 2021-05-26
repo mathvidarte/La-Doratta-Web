@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/index.css">
+    <title>Ingresar</title>
+</head>
+<body>
+
+    <div class="container__login">
+        <section class="login">
+
+            <div class="main__error">
+                
+            </div>
+
+            <h2 class="login__title">Ingresar</h2>
+            <form action="/formResult" class="login__inputs">
+               
+                    <div class="email__type">
+                        <label class="login__label">Correo electrónico</label>
+                        <input type="email" class="login__email" placeholder="Correo electrónico" name="email">
+                    </div>
+                
+               
+                    <div class="email__type">
+                        <label class="login__label">Contraseña</label>
+                        <input type="password" class="login__password" placeholder="Cotraseña" name="password">
+                    </div>
+
+                    <a class="goSignUp" onclick="window.location='signUp.html'">¿No tienes una cuenta? Registrate</a>
+                
+                    <button type="submit" class="btnLogIn">Ingresar</button>
+
+            </form>
+        </section>
+       
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/logIn.js"></script>
+</body>
+</html>

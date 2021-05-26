@@ -31,6 +31,15 @@
                     
                 </div>
 
+                <div class="menua__close">
+                    <button class="user__close" onclick="window.location.href = 'store.html'">CERRAR SESIÓN</button>
+                </div>
+
+                <div class="manua__user">
+                    <button class="user__btnLS" onclick="window.location.href = 'logIn.html'">INGRESAR</button>
+                    <button class="user__btnLS user__btnLS--signUp" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
+                </div>
+
                 <img class="menua__cart" src="./imgs/car.png">
   
             </div>
@@ -53,11 +62,7 @@
             </div>
 
             <article class="mainS__article article">
-                <img class="article__img" src="./imgs/carrotCake.jpg">
-                <div class="article__info">
-                    <h1 class="info__tittle">Carrot Cake</h1>
-                    <p class="info__description">Torta de zanahoría con nueces y un relleno de un delicioso y suave CheessCream decorada con un camino de nueces.</p>
-                    <p class="info__price">$38.000</p>
+                
                     <div class="infoqty">
                         <label class="infoqty__label">Cantidad</label>
                         <select class="infoqty__select">
@@ -71,7 +76,6 @@
                     <div class="infobtn">
                         <button type="button" class="info__btn">Agregar al carrito<img src="./imgs/cardWhite.png"></button>
                     </div>
-                </div>
             </article>
             <article class="articleInfo">
                 <h1 class="articleInfo__tagOne">Nosotros horneamos.</h1>
@@ -148,12 +152,31 @@
                 </section>
             </footer>
 
+            <input type="checkbox" id="menub__hamburguer">
+
+        <div class="container__menu"> 
+            <div class="cont__menu">
+                <nav>
+                    <a href="./index.html" class="links__home">Home</a>
+                    <a href="#" class="links_about" > Sobre nosotros</a>
+                    <a href="./store.html" class="links__menu">Menú</a>
+                    <a href="#" class="links__contact">Contáctanos</a>
+                    <button class="links__btnLS" onclick="window.location.href = 'logIn.html'">INGRESAR</button>
+                    <button class="links__btnLS" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
+                </nav>
+                <label class="menu__close" for="menub__hamburguer"><img src="imgs/close.png"></label>
+            </div>
+        </div>
+
     </div>
 
 
         <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
         <script src="./scripts/general.js"></script>
+        <script src="./scripts/authUtils.js"></script>
+        <script src="./scripts/product.js"></script>
 </body>
 </html>

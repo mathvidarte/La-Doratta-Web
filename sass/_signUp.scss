@@ -1,0 +1,98 @@
+.container__signup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+    background: #be8d49;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    .signUp {
+        margin: 20px 93px 0px 93px;
+
+        .main__error {
+            .error__msn {
+                font-family: 'Work Sans', sans-serif;
+                font-weight: lighter;
+                color: white;
+            }
+        }
+
+        .signUp__title {
+            font-family: Yeseva One;
+            color: white;
+            width: 100%;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signUp__inputs {
+           
+           .signup__label {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: lighter;
+            color: white;
+           }
+
+           input {
+            border-color: white;
+            background-color: rgba(0, 0, 0, 0);
+            height: 40px;
+            border-radius: 5px;
+            color: white;
+            border: solid 2px;
+            box-sizing: border-box;
+            font-size: 18px;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: lighter;
+            margin-top: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        ::placeholder {
+            color: #eed8b8;
+        font-size: 16px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: lighter;
+        }
+        }
+    }
+
+
+
+    .btnSignUp {
+        width: 100%;
+        height: 45px;
+        color: #be8d49;
+        background-color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-style: italic;
+        border-radius: 5px;
+        font-size: 18px;
+        border: solid white 2px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        
+    }
+
+    .gologIn {
+        text-decoration: none;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        font-weight:inherit;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .container__signup {
+
+        .signUp {
+            margin: 20px 16px 0px 16px;
+        }
+    }
+}

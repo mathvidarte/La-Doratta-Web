@@ -1,5 +1,5 @@
 .article {
-    background-image: url(../imgs/carrotCake.jpg);
+    //background-image: url(../imgs/carrotCake.jpg);
     width: 100%;
     height: 450px;
     background-repeat: no-repeat !important;
@@ -167,6 +167,14 @@
 
     .container {
         width: 100%;
+    }
+
+    .navegation {
+
+        .navigation__menua {
+            display: none;
+        }
+
     }
 
     .article {

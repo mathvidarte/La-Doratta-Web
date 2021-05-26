@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/index.css">
+    <title>Registrate</title>
+</head>
+<body>
+
+    <div class="container__signup">
+        <section class="signUp">
+
+            <div class="main__error">
+                
+            </div>
+
+            <h2 class="signUp__title">Registrate</h2>
+            <form action="/formResult" class="signUp__inputs">
+                
+                    <div class="firstname">
+                        <label class="signup__label">Nombre </label>
+                        <input type="text" class="firstname__text" placeholder="Nombre" name="name">
+                    </div>
+                
+                    <div class="email__type">
+                        <label class="signup__label">Correo electrónico</label>
+                        <input type="email" class="signUp__email" placeholder="Correo electrónico" name="email">
+                    </div>
+
+                    <div class="password__type">
+                        <label class="signup__label">Contraseña</label>
+                        <input type="password" class="signUp__password" placeholder="Contraseña" name="password">
+                    </div>
+
+                    <a class="gologIn" onclick="window.location='logIn.html'">¿Ya tienes una cuenta? Ingresa</a>
+
+                    <button type="submit" class="btnSignUp">Registrarse</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+    <script src="./scripts/general.js"></script>
+    <script src="./scripts/authUtils.js"></script>
+    <script src="./scripts/signUp.js"></script>
+</body>
+</html>

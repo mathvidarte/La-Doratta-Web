@@ -12,26 +12,31 @@ const handleCollectionResult = (querySnapshot) => {
         const data = doc.data();
         console.log(doc.id);
 
-        const product =document.createElement('a');
+        const product =document.createElement('div');
         let img = data.images[0]?.url
         if (!img) {
             img = './imgs/noImg.png';
         }
         product.innerHTML = `
-        <div class="column__product">
-            <p class="product__title"> ${data.name}</p>
-            <p class="product__sub">${data.type}</p>
-        </div>
-        <div class="column__footer">
-            <p class="product__price">$${data.price}</p>
-            <img src='imgs/starScore.png'>
-            <button type="button"><img src="./imgs/car.png">Agregar</button>
-        </div>
+        <a class="product" href="./product.html?id=${doc.id}&name=${data.name}">
+            <div class="column__product">
+                <p class="product__title"> ${data.name}</p>
+                <p class="product__sub">${data.type}</p>
+            </div>
+            <div class="column__footer">
+                <p class="product__price">$${data.price}</p>
+                <button class="hidden showLoggedAdmin">Eliminar</button>
+                <img src='imgs/starScore.png'>
+                <button type="button"><img src="./imgs/car.png">Agregar</button>
+            </div>
+        </a>
+        <button class="product__delete hidden showLoggedInAdmin">Eliminar</button>
+        
         `;
         product.classList.add('product');
         
         product.setAttribute('style', `background-image: url(${img})`);
-        product.setAttribute('href', `./product.html?id=${doc.id}&name=${data.name}`);
+       
         list.appendChild(product);
 
         console.log(data.name);
