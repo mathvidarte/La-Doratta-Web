@@ -15,6 +15,8 @@ const storage = firebase.storage();
 let path = window.location.href;
 let thefile = path.split('/');
 
+const menua__cart = document.querySelector('.menua__cart');
+
 let loggedUser = null;
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -26,7 +28,7 @@ firebase.auth().onAuthStateChanged((user) => {
       loggedUser = doc.data();
       loggedUser.uid = user.uid
 
-      if (thefile[thefile.length-1] == 'store.html'){
+      if (thefile[thefile.length-1] == 'store.html' || thefile[thefile.length-1] == 'card.html'){
         userAuthChanged(true);
       } 
 
@@ -34,12 +36,17 @@ firebase.auth().onAuthStateChanged((user) => {
         window.location='store.html';
       }
 
+      
+
+
     })
   } else {
     loggedUser = null;
-    if (thefile[thefile.length-1] == 'store.html' || thefile[thefile.length-1] == 'product.html') {
+    if (thefile[thefile.length-1] == 'store.html' || thefile[thefile.length-1] == 'card.html') {
       userAuthChanged(false);
     }
   }
 });
+
+
 

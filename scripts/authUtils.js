@@ -1,4 +1,6 @@
  
+const user__close = document.querySelector('.user__close');
+
 function userAuthChanged (loggedIn) {
 
     const showLoggedIn = document.querySelectorAll('.showLoggedIn');
@@ -29,3 +31,10 @@ function userAuthChanged (loggedIn) {
     });
    
 }
+
+user__close.addEventListener('click', () => {
+    firebase.auth().signOut()
+    .then (function() {
+        window.location.href = 'store.html';
+    });
+});

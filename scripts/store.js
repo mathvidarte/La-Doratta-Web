@@ -5,7 +5,14 @@ const filters = document.querySelector('.mainS__filter');
 const filterPopUp = document.querySelector('.filterPopUp');
 const filterBtn = document.querySelector('.filterBtn');
 
-const user__close = document.querySelector('.user__close');
+const cartNumber = document.querySelector('.menua__cart span');
+
+let cart = [];
+const cartFromLS = localStorage.getItem('store__cart');
+if(cartFromLS) {
+    cart = JSON.parse(cartFromLS);
+    cartNumber.innerText=cart.length;
+}
 
 const filter__closeBtn = document.querySelector('.filter__closeBtn');
 const popup = document.querySelector('.mainS__filter');
@@ -40,17 +47,22 @@ const handleCollectionResult = (querySnapshot) => {
                 <p class="product__price">$${data.price}</p>
                 <button class="hidden showLoggedAdmin">Eliminar</button>
                 <img src='imgs/starScore.png'>
-                <button type="button"><img src="./imgs/car.png">Agregar</button>
             </div>
         </a>
+        <button type="button" class="addCart">AGREGAR</button>
         <button class="product__delete hidden showLoggedInAdmin">Eliminar</button>
         `;
         product.classList.add('product');
-        
         product.setAttribute('style', `background-image: url(${img})`);
-       
         list.appendChild(product);
 
+        const addCart = product.querySelector('.addCart');
+        addCart.addEventListener('click', function () {
+            console.log(data);
+            cart.push(data);
+            localStorage.setItem('store__cart', JSON.stringify(cart));
+            cartNumber.innerText=cart.length;
+        });
         
         });
 }
@@ -124,11 +136,4 @@ menubHamburguer.addEventListener('click', handleMenu);
 
 filterBtn.addEventListener ('click', function() {
     
-});
-
-user__close.addEventListener('click', () => {
-    firebase.auth().signOut()
-    .then (function() {
-        window.location.href = 'store.html';
-    });
 });

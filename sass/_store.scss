@@ -57,9 +57,16 @@ body{
 }
 
 .menua__cart {
-    width: 30px;
-    height: 30px;
+
+    background-color: white;
+    border: none;
     margin-right:93px;
+    width: auto;
+
+    .cart__btn {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 //--------MAIN-------------
@@ -275,7 +282,6 @@ body{
                 height: 48px;
                 justify-content: space-between;
                 align-items: center;
-                //background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(255,255,255,.0));
                 background-color:rgba(0, 0, 0, .7) ;
                 margin: 0px 0px 0px 0px;
                 padding: 10px;
@@ -294,29 +300,34 @@ body{
                     margin: 0px;
                     padding: 0px;
                 }
+            }
 
-                button {
-                    display: flex;
-                    flex-direction: row;
+            .addCart {
+                
+                width: 100%;
+                background: white;
+                border: 2px solid #be8d49;
+                padding: 5px 0px;
+                font-size: 20px;
+                font-weight:lighter;
+                font-family: 'Work Sans', sans-serif;
+                color: #be8d49;
+                margin: 0px;
+                cursor: pointer;
+                
+                img {
                     width: 34px;
-                    height: 33px;
-                    background: none;
-                    border: none;
-                    padding: 0px;
-                    font-size: 20px;
-                    font-weight:lighter;
-                    font-family: 'Work Sans', sans-serif;
-                    color: #be8d49;
-                    margin-right: 75px;
-                    
-                    img {
-                        width: 34px;
-                        height: 33px; 
-                        margin-right: 5px;
-                    }
+                    height: 33px; 
+                    margin-right: 5px;
                 }
 
-                
+                .cartSpan {
+                    text-decoration: none;
+                    font-weight:lighter;
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 15px;
+                    color: #be8d49;
+                }
             }
 
             &__delete {
