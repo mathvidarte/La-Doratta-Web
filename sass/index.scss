@@ -48,22 +48,26 @@ body {
                 
 
                 .menua__logo {
-                    width: 85px;
+                    margin-right: 20px;
+                    margin-left: 93px;
+                    img {
+                        width: 85px;
+                    }
                 }
             
                 .menua__links {
                     display: flex;
                     flex-direction: row;
 
-                    a{
-                        text-decoration: none;
-                        color: #be8d49;
-                    }
-            
-                    .links__menu{
-                        margin-left: 20px;
-                        margin-right: 20px;
-                    }
+                        a{
+                            text-decoration: none;
+                            color: #be8d49;
+                        }
+                
+                        .links__menu{
+                            margin-left: 20px;
+                            margin-right: 20px;
+                        }
                 }
             
                 .menua__search {

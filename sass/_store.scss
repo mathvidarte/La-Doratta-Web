@@ -11,18 +11,12 @@ body{
 
 //-------NAVEGATION--------
 
-.menua__logo {
-    margin-right: 20px;
-    img {
-        width: 85px;
-        margin-left: 93px;
-    }
-}
+
 
 .menua__close {
     .user__close {
         background-color:white;
-        border: solid 1px #be8d49;
+        border: solid 2px #be8d49;
         box-shadow: none;
         color: #cea66f;
         font-family: 'Work Sans', sans-serif;
@@ -31,14 +25,18 @@ body{
         padding: 10px;
         width: 150px;
     }
+
+    .user__close:hover {
+        background: rgba($color: #be8d49, $alpha: .2);
+    }
 }
 
-.manua__user {
+.menua__user {
     margin: 0px;
 
     .user__btnLS {
         background-color:white;
-        border: solid 1px #be8d49;
+        border: solid 2px #be8d49;
         box-shadow: none;
         color: #cea66f;
         font-family: 'Work Sans', sans-serif;
@@ -51,7 +49,10 @@ body{
             background-color:#be8d49;
             color: white;
         }
-        
+    }
+
+    .user__btnLS:hover {
+        background: rgba($color: #be8d49, $alpha: .2);
     }
 }
 
@@ -64,6 +65,7 @@ body{
 //--------MAIN-------------
 .mainS {
     margin-top: 104px;
+    justify-content: center;
    
 
     &__status {
@@ -185,6 +187,31 @@ body{
     &__filter--respo {
         display: none;
     }
+    
+
+    &__goToForm {
+        display: flex;
+        justify-content: center;
+        
+        .goToFormBtn {
+            background-color: rgba(0, 0, 0, .0);
+            border: 2px solid #be8d49;
+            box-shadow: none;
+            color: #be8d49;
+            font-family: 'Work Sans', sans-serif;
+            font-style: italic;
+            padding: 10px 10px;
+            width: 234px;
+            margin-top: 0px;
+            font-size: 18px;
+        }
+
+        .goToFormBtn:hover {
+            background: rgba($color: #be8d49, $alpha: .2);
+        }
+    }
+
+    
 
     &__list {
         display: flex;
@@ -501,7 +528,86 @@ body{
                 }
             }
 
-            
+            &__filter {
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                z-index: 100;
+                width: 90%;
+                top: 150px;
+                left: 20px;
+                background-color:#be8d49;
+                margin: 0px;
+                padding: 0px;
+                box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+                border-radius: 10px;
+                
+
+                .filter__row {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    font-family: 'Work Sans', sans-serif;
+                    color: white;
+                    font-weight: lighter;
+                        
+                   .filter__label {
+                        color: white;
+                        margin-right: 0px;
+                        margin-top: 30px;
+        
+                   }    
+                   .filter__all {
+        
+                       .filter__input {
+                           width: 300px;
+                           margin: 10px 0px 0px 0px;
+                       }
+                   }
+                        
+        
+                }
+        
+                .order__row {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    text-align: center;
+        
+                    .order__label {
+                        margin-right:  0px;
+                    }
+        
+                    .order__all {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+        
+                        .order__input {
+                            height: 30px;
+                            width: 300px;
+                            margin: 10px 0px 0px 0px;
+                        }
+                    }
+                }
+
+                .filter__closeBtn {
+                    background-color: white;
+                    color:#be8d49;
+                    box-shadow: none;
+                    border: none;
+                    width: 200px;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-style: italic;
+                    margin-bottom: 30px;
+                }
+            }
+
+            &__goToForm {
+                margin-top: 30px;
+            }
 
             &__filter--respo {
                 display: flex;
@@ -531,7 +637,7 @@ body{
                 flex-direction: column;
                 align-items: center;
                 width: auto;
-                margin: 100px 16px;
+                margin: 30px 16px;
 
                 .product {
                     width: 382px;

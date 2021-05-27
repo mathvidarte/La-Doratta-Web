@@ -5,12 +5,25 @@ const filters = document.querySelector('.mainS__filter');
 const filterPopUp = document.querySelector('.filterPopUp');
 const filterBtn = document.querySelector('.filterBtn');
 
+const user__close = document.querySelector('.user__close');
+
+const filter__closeBtn = document.querySelector('.filter__closeBtn');
+const popup = document.querySelector('.mainS__filter');
+
+filterBtn.addEventListener('click', () => {
+    popup.style.display = 'flex';
+    filter__closeBtn.classList.remove('hidden');
+});
+
+filter__closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+})
+
 
 const handleCollectionResult = (querySnapshot) => {
         list.innerHTML='';
         querySnapshot.forEach((doc) => {
         const data = doc.data();
-        console.log(doc.id);
 
         const product =document.createElement('div');
         let img = data.images[0]?.url
@@ -31,7 +44,6 @@ const handleCollectionResult = (querySnapshot) => {
             </div>
         </a>
         <button class="product__delete hidden showLoggedInAdmin">Eliminar</button>
-        
         `;
         product.classList.add('product');
         
@@ -39,14 +51,11 @@ const handleCollectionResult = (querySnapshot) => {
        
         list.appendChild(product);
 
-        console.log(data.name);
+        
         });
 }
 
 filters.addEventListener('change', function() {
-    console.log('tipo: ', filters.type.value);
-    console.log('sabor: ', filters.flavor.value);
-    console.log('precio: ', filters.price.value);
 
     let productsCollection = db.collection('products');
 
@@ -115,4 +124,11 @@ menubHamburguer.addEventListener('click', handleMenu);
 
 filterBtn.addEventListener ('click', function() {
     
-})
+});
+
+user__close.addEventListener('click', () => {
+    firebase.auth().signOut()
+    .then (function() {
+        window.location.href = 'store.html';
+    });
+});

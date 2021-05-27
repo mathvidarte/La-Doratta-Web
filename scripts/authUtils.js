@@ -1,24 +1,31 @@
-const manua__user = document.querySelector('.manua__user');
-const menua__close =document.querySelector('.menua__close');
+ 
+function userAuthChanged (loggedIn) {
 
-
-function userLoggedIn () {
-
-    manua__user.classList.add('hidden');
-    menua__close.classList.remove('hidden');
-
-   /* if(loggedUser.admin) {
-        const showLoggedInAdmin = document.querySelectorAll('.showLoggedInAdmin');
-        showLoggedInAdmin.forEach(function(elem) {
+    const showLoggedIn = document.querySelectorAll('.showLoggedIn');
+    showLoggedIn.forEach( function (elem) {
+        if (loggedIn) {
             elem.classList.remove('hidden');
-        });
-    }*/
+        } else {
+            elem.classList.add('hidden');
+        }
+    });
 
+    const hideLoggedIn = document.querySelectorAll('.hideLoggedIn');
+    hideLoggedIn.forEach( function (elem) {
+        if (loggedIn) {
+            elem.classList.add('hidden');
+        } else {
+            elem.classList.remove('hidden');
+        }
+    });
 
-}
-
-function userLoggedOut () {
-    
-    manua__user.classList.remove('hidden');
-    menua__close.classList.add('hidden');
+    const showLoggedInAdmin = document.querySelectorAll('.showLoggedInAdmin');
+    showLoggedInAdmin.forEach(function(elem) {
+        if(loggedIn && loggedUser.admin) {
+            elem.classList.remove('hidden');
+        } else {
+            elem.classList.add('hidden');
+        }
+    });
+   
 }

@@ -12,22 +12,34 @@ const firebaseConfig = {
 const db = firebase.firestore();
 const storage = firebase.storage();
 
+let path = window.location.href;
+let thefile = path.split('/');
+
 let loggedUser = null;
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    console.log('onAuthStateChanged', user)
-
+  
     db.collection('users').doc(user.uid).get().then(function(doc) {
+
+      console.log(doc.data());
       loggedUser = doc.data();
-      //loggedUser.uid = user.uid
-      
-      userLoggedIn();
+      loggedUser.uid = user.uid
+
+      if (thefile[thefile.length-1] == 'store.html'){
+        userAuthChanged(true);
+      } 
+
+      if (thefile[thefile.length-1] == 'logIn.html') {
+        window.location='store.html';
+      }
 
     })
   } else {
-    //userLoggedOut();
-    let loggedUser = null;
+    loggedUser = null;
+    if (thefile[thefile.length-1] == 'store.html' || thefile[thefile.length-1] == 'product.html') {
+      userAuthChanged(false);
+    }
   }
 });
 

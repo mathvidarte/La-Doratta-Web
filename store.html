@@ -31,11 +31,11 @@
                     
                 </div>
 
-                <div class="menua__close">
-                    <button class="user__close" onclick="window.location.href = 'store.html'">CERRAR SESIÓN</button>
+                <div class="menua__close hidden showLoggedIn">
+                    <button class="user__close">CERRAR SESIÓN</button>
                 </div>
 
-                <div class="manua__user">
+                <div class="menua__user hideLoggedIn">
                     <button class="user__btnLS" onclick="window.location.href = 'logIn.html'">INGRESAR</button>
                     <button class="user__btnLS user__btnLS--signUp" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
                 </div>
@@ -75,10 +75,10 @@
             </div>
 
             <!----------FILETERS---------------->
-            <form class="mainS__filter mainS__filter--show">
-                <div class="filter__row filter__row--show">
+            <form class="mainS__filter">
+                <div class="filter__row">
                     <label class="filter__label">Filtrar por:</label>
-                        <div class="filter__all filter__all--show">
+                        <div class="filter__all">
 
                             <select class="filter__input" name="type" id="type">
                                 <option value="">Tipo</option>
@@ -111,9 +111,9 @@
                         </div>
                  </div>
 
-                 <div class="order__row order__row--show">
+                 <div class="order__row ">
                      <label for="oPrice" class="order__label">Ordenar por:</label>
-                     <div class="order__all order__all--show">
+                     <div class="order__all">
                          
                          <select class="order__input" name="orderPrice" id="orderPrice">
                              <option value="">Precio</option>
@@ -131,72 +131,19 @@
                      </div>
 
                  </div>
-                
+
+                <button type="button" class="filter__closeBtn hidden">Cerrar</button>
+
             </form>
 
             <div class="mainS__filter--respo">
                 <button type="button" class="filterBtn">FILTRAR Y ORDENAR</button>
             </div>
 
-            <div class="filterPopUp">
-                <form class="mainS__filter mainS__filter--show">
-                    <div class="filter__row filter__row--show">
-                        <label class="filter__label">Filtrar por:</label>
-                            <div class="filter__all filter__all--show">
-    
-                                <select class="filter__input" name="type" id="type">
-                                    <option value="">Tipo</option>
-                                    <option>Tortas</option>
-                                    <option>Cupcakes</option>
-                                    <option>Rolls</option>
-                                    <option>Pies</option>
-                                </select>
-        
-                                 <select class="filter__input" name="flavor" id="flavor">
-                                     <option value="">Sabor</option>
-                                     <option value="Naranja con amapola">Naranja</option>
-                                     <option value="Vainilla">Vainilla</option>
-                                     <option value="Chocolate">Chocolate</option>
-                                     <option value="Red Velvet">Red Velvet</option>
-                                     <option value="Vino">Vino</option>
-                                     <option value="Zanahoria">Zanahoria</option>
-                                     <option value="Calabaza">Calabaza</option>
-                                     <option value="Canela">Canela</option>
-                                     <option value="Nuetella">Nutella</option>
-                                     <option value="Limón">Limón</option>
-                                 </select>
-                             
-                                 <select class="filter__input" name="price" id="price">
-                                     <option value="">Precio</option>
-                                     <option value="0">Menos de $25.000</option>
-                                     <option value="1">Entre $25.000 y $50.000</option>
-                                     <option value="2">Más de $50.000</option>
-                                 </select>
-                            </div>
-                     </div>
-    
-                     <div class="order__row order__row--show">
-                         <label for="oPrice" class="order__label">Ordenar por:</label>
-                         <div class="order__all order__all--show">
-                             
-                             <select class="order__input" name="orderPrice" id="orderPrice">
-                                 <option value="">Precio</option>
-                                 <option value="price__desc">Mayor a menor precio</option>
-                                 <option value="price__asc">Menor a mayor precio</option>
-                             </select>
-        
-                             <select class="order__input" name="orderName" id="orderName">
-                                <option value="">Nombre</option>
-                                <option value="name__asc">De la A - Z</option>
-                                <option value="name__desc">De la Z - A</option>
-                            </select>
-        
-                            
-                         </div>
-    
-                     </div>
-                    
-                </form>
+            
+
+            <div class="mainS__goToForm">
+                <button class="goToFormBtn hidden showLoggedInAdmin" onclick="window.location.href = 'productForm.html'">AGREGAR PRODUCTOS</button>
             </div>
             
             
@@ -252,5 +199,6 @@
         <script src="./scripts/general.js"></script>
         <script src="./scripts/authUtils.js"></script>
         <script src="./scripts/store.js"></script>
+
 </body>
 </html>
