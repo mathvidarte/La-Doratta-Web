@@ -13,7 +13,7 @@ login__inputs.addEventListener('submit', function(event) {
     // Signed in
     var user = userCredential.user;
     console.log(user);
-    window.location='store.html';
+    
   })*/
   .catch((error) => {
    

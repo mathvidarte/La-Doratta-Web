@@ -1527,7 +1527,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 20px;
+  margin: 30px 20px;
   font-family: 'Work Sans', sans-serif;
   font-weight: lighter;
   color: white;
@@ -1552,41 +1552,6 @@ body {
   border-radius: 5px;
   font-size: 16px;
   border: solid 2px;
-}
-
-.article__info .infobtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
-}
-
-.article__info .infobtn .info__btn {
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  padding: 5px 0px 5px 10px;
-  width: 285px;
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-family: 'Work Sans', sans-serif;
-  font-style: italic;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.article__info .infobtn .info__btn img {
-  width: 25px;
-  margin-left: 10px;
-}
-
-.article__info .infobtn :hover {
-  background: rgba(255, 255, 255, 0.3);
 }
 
 .articleInfo {
@@ -2045,26 +2010,7 @@ body {
   }
 }
 
-.mainCart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 104px 93px 0px 93px;
-}
-
-.mainCart__title {
-  margin: 30px 0px 0px 0px;
-  font-family: Yeseva One;
-  color: #be8d49;
-  width: auto;
-  font-size: 70px;
-}
-
-.mainCart__cont {
+.mainC {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2072,10 +2018,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.mainCart__cont .allArticles {
+.mainC .mainC__alert {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2083,10 +2029,83 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0px 20px 20px 0px;
+  position: fixed;
+  top: 250px;
+  left: 400px;
+  z-index: 99;
+  background: white;
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
-.mainCart__cont .allArticles .eachProduct {
+.mainC .mainC__alert .alert__msn {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  color: #be8d49;
+  font-size: 30px;
+}
+
+.mainC .mainC__alert .alertClose {
+  margin: 20px 20px;
+  background-color: #be8d49;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: italic;
+  height: 45px;
+}
+
+.mainC .mainCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 104px 20px 0px 93px;
+  width: 100%;
+}
+
+.mainC .mainCart__title {
+  margin: 30px 0px 0px 0px;
+  font-family: Yeseva One;
+  color: #be8d49;
+  width: 400px;
+  font-size: 70px;
+}
+
+.mainC .mainCart__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.mainC .mainCart__cont .allArticles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 0px 20px 0px;
+}
+
+.mainC .mainCart__cont .allArticles .eachProduct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2095,36 +2114,36 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 100%;
-  margin-bottom: 20px;
   background: #be8d49;
 }
 
-.mainCart__cont .allArticles .eachProduct__img {
-  width: 100%;
+.mainC .mainCart__cont .allArticles .eachProduct__img {
+  width: 40%;
   background-size: cover;
   background-repeat: no-repeat !important;
 }
 
-.mainCart__cont .allArticles .eachProduct__img .img__product {
+.mainC .mainCart__cont .allArticles .eachProduct__img .img__product {
   display: none;
 }
 
-.mainCart__cont .allArticles .eachProduct__info {
+.mainC .mainCart__cont .allArticles .eachProduct__info {
   padding-left: 20px;
   -ms-flex-line-pack: justify;
       align-content: space-between;
   position: relative;
+  width: 100%;
+  height: 200px;
 }
 
-.mainCart__cont .allArticles .eachProduct__info .info__title {
+.mainC .mainCart__cont .allArticles .eachProduct__info .info__title {
   font-family: Yeseva One;
   color: white;
-  width: auto;
   font-size: 30px;
   margin: 20px 0px 10px 0px;
 }
 
-.mainCart__cont .allArticles .eachProduct__info .info__description {
+.mainC .mainCart__cont .allArticles .eachProduct__info .info__description {
   font-size: 15px;
   font-family: 'Work Sans', sans-serif;
   font-weight: lighter;
@@ -2132,7 +2151,7 @@ body {
   color: white;
 }
 
-.mainCart__cont .allArticles .eachProduct__info .info__price {
+.mainC .mainCart__cont .allArticles .eachProduct__info .info__price {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -2141,9 +2160,14 @@ body {
   color: white;
   font-style: italic;
   margin: 0px;
+  font-size: 25px;
 }
 
-.mainCart__cont .subtotal {
+.mainC .checkOut {
+  margin: 245px 93px 0px 0px;
+}
+
+.mainC .checkOut .subtotal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2158,32 +2182,331 @@ body {
   color: white;
 }
 
-.mainCart__cont .subtotal__summary {
+.mainC .checkOut .subtotal__summary {
   margin: 0px;
   padding: 20px;
 }
 
-.mainCart__cont .subtotal__shipping {
+.mainC .checkOut .subtotal__shipping {
   margin: 0px;
   padding: 0px 20px;
 }
 
-.mainCart__cont .subtotal__total {
+.mainC .checkOut .subtotal__total {
   margin: 0px;
   padding: 20px;
+  font-size: 25px;
 }
 
-.mainCart__cont .subtotal__btn {
-  margin: 0px 20px 20px 20px;
+.mainC .checkOut .subtotal .checkOutInfo {
+  text-align: center;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm {
+  margin: 0px 0px;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field {
+  margin: 0px 20px;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field__input {
+  border-color: white;
+  color: #f0e3d0;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  border: solid 2px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field ::-webkit-input-placeholder {
+  color: #eed8b8;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field :-ms-input-placeholder {
+  color: #eed8b8;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field ::-ms-input-placeholder {
+  color: #eed8b8;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field ::placeholder {
+  color: #eed8b8;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm .form__btn {
+  margin: 20px 20px;
   background-color: white;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
-  padding: 5px 15px 5px 10px;
   color: #be8d49;
   font-size: 18px;
   font-family: 'Work Sans', sans-serif;
   font-style: italic;
+  height: 45px;
+}
+
+.mainC .checkOut .subtotal .checkOutInfo .checkOutForm .form__btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 100%;
+  }
+  .navegation .navigation__menua {
+    display: none;
+  }
+  .mainC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainC .mainC__alert {
+    top: 250px;
+    left: 16px;
+    z-index: 99;
+    background: white;
+    width: 382px;
+    height: 200px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  .mainC .mainC__alert .alert__msn {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    color: #be8d49;
+    font-size: 30px;
+  }
+  .mainC .mainC__alert .alertClose {
+    margin: 20px 20px;
+    background-color: #be8d49;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    height: 45px;
+  }
+  .mainC .mainCart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 70px 16px 0px 16px;
+    width: auto;
+  }
+  .mainC .mainCart__title {
+    margin: 30px 0px 0px 0px;
+    width: 300px;
+    font-size: 40px;
+  }
+  .mainC .mainCart__cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0px 0px 0px;
+  }
+  .mainC .mainCart__cont .allArticles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+  }
+  .mainC .mainCart__cont .allArticles .eachProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #be8d49;
+    width: 100%;
+  }
+  .mainC .mainCart__cont .allArticles .eachProduct__img {
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+  }
+  .mainC .mainCart__cont .allArticles .eachProduct__img .img__product {
+    display: none;
+  }
+  .mainC .mainCart__cont .allArticles .eachProduct__info {
+    padding-left: 20px;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-right: 16px;
+  }
+  .mainC .mainCart__cont .allArticles .eachProduct__info .info__title {
+    font-family: Yeseva One;
+    color: white;
+    width: 100px;
+    font-size: 30px;
+    margin: 20px 0px 10px 0px;
+  }
+  .mainC .mainCart__cont .allArticles .eachProduct__info .info__description {
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    margin: 0px 20px 20px 0px;
+    color: white;
+    width: 100%;
+  }
+  .mainC .mainCart__cont .allArticles .eachProduct__info .info__price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-style: italic;
+    margin: 0px;
+    font-size: 20px;
+  }
+  .mainC .checkOut {
+    margin: 0px 16px 0px 16px;
+    text-align: center;
+  }
+  .mainC .checkOut .subtotal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background: #be8d49;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    color: white;
+  }
+  .mainC .checkOut .subtotal__summary {
+    margin: 0px;
+    padding: 20px;
+  }
+  .mainC .checkOut .subtotal__shipping {
+    margin: 0px;
+    padding: 0px 20px;
+  }
+  .mainC .checkOut .subtotal__total {
+    margin: 0px;
+    padding: 20px;
+    font-size: 25px;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo {
+    text-align: center;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm {
+    margin: 0px 0px;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field {
+    margin: 0px 20px;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field__input {
+    border-color: white;
+    color: #f0e3d0;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    border: solid 2px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field ::-webkit-input-placeholder {
+    color: #eed8b8;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field :-ms-input-placeholder {
+    color: #eed8b8;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field ::-ms-input-placeholder {
+    color: #eed8b8;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm .field ::placeholder {
+    color: #eed8b8;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm .form__btn {
+    margin: 20px 20px;
+    background-color: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    color: #be8d49;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    height: 45px;
+  }
+  .mainC .checkOut .subtotal .checkOutInfo .checkOutForm .form__btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
 }
 
 body {

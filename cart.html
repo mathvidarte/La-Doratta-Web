@@ -38,9 +38,10 @@
                     <button class="user__btnLS user__btnLS--signUp" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
                 </div>
 
-                <button class="menua__cart">
-                    <img class="cart__btn" src="./imgs/car.png" onclick="window.location.href = 'card.html'">
-                </button>
+                <a class="menua__cart" href="/cart.html">
+                    <img class="cart__btn" src="./imgs/car.png">
+                    <span class="cartSpan"></span>
+                </a>
   
             </div>
             <div class="navegation__menub">
@@ -54,40 +55,88 @@
 
         <!------------------MAIN------------------->
 
-        <main class="mainCart">
-            <h1 class="mainCart__title">Tu carrito</h1>
-            <div class="mainCart__cont">
-                <div class="allArticles">
-                    <article class="eachProduct">
-                        <div class="eachProduct__img" style="background-image: url(imgs/carrotCake.jpg);">
-                            <img class="img__product" src="imgs/carrotCake.jpg">
-                        </div>
-                        <div class="eachProduct__info">
-                            <h1 class="info__title">Carrot Cake</h1>
-                            <p class="info__description">Aquí va una info super cool del producto así supe rinspiracional y bello. Además necesito qeu sea largo porqeu así se ve más nice, xd. </p>
-                            <p class="info__price">$28.000</p>
-                        </div>
-                    </article>
-                    <article class="eachProduct">
-                        <div class="eachProduct__img" style="background-image: url(imgs/carrotCake.jpg);">
-                            <img class="img__product" src="imgs/carrotCake.jpg">
-                        </div>
-                        <div class="eachProduct__info">
-                            <h1 class="info__title">Carrot Cake</h1>
-                            <p class="info__description">Aquí va una info super cool del producto así supe rinspiracional y bello. Además necesito qeu sea largo porqeu así se ve más nice, xd. </p>
-                            <p class="info__price">$28.000</p>
-                        </div>
-                    </article>
-                </div>
-                <aside class="subtotal">
-                    <p class="subtotal__summary">Subtotal (1 artículo): $28.000 </p>
-                    <p class="subtotal__shipping">Costo del envio: $7.000</p>
-                    <p class="subtotal__total"><strong>Total: $35.000</strong></p>
-                    <button type="button" class="subtotal__btn">COMPRAR</button>
-                </aside>
+        <main class="mainC">
+
+            <div class="mainC__alert hidden">
+                <p class="alert__msn"><strong>Compra exitosa. <br> ¡Gracias por tu compra!</strong> </p>
+                <button class="alertClose" type="button" onclick="window.location.href = '/store.html'" >CERRAR</button>
             </div>
+
+            <section class="mainCart">
+                <h1 class="mainCart__title">Tu carrito</h1>
+    
+                <div class="mainCart__cont">
+                    
+                   
+                </div>
+            </section>
+            <section class="checkOut">
+            <aside class="subtotal">
+                <p class="subtotal__summary">Subtotal: $<span style="color:white;"></span> </p>
+                <p class="subtotal__shipping">Costo del envio: $10.000</p>
+                <p class="subtotal__total"><strong>Total: $<span style="color:white;"></span> </strong></p>
+
+                <div class="checkOutInfo">
+                    <h1 class="checkOutInfo__title">Datos del envio</h1>
+                    <form class="checkOutForm">
+                        <div class="field">
+                            <labe class="field__lable" for="address">Dirección de entrega</labe>
+                            <input class="field__input address" id="address" name="address" type="text" placeholder="Dirección">
+                        </div>
+                        <div class="field">
+                            <labe class="field__lable" for="card">Número de tarjeta</labe>
+                            <input class="field__input credicCard" id="card" name="card" type="number" placeholder="Número de tarjeta">
+                        </div>
+                        <div class="field">
+                            <labe class="field__lable" for="cvvNumber">CVV</labe>
+                            <input class="field__input cvvNumber" id="cvvNumber" name="cvvNumber" type="password" placeholder="Número CVV">
+                        </div>  
+                        <button type="submit" class="form__btn">COMPRAR</button> 
+                    </form>
+                </div>
+
+               
+                
+            </aside>
+            </section>
+    
+           
             
         </main>
+
+        <footer class="footer">
+            <img src="imgs/logoComplete.png">
+            <div class="menu__networks--respo">
+                <img class="networks__wa" src="imgs/waLogo.png">
+                <img class="networks__ig" src="imgs/igLogo.png">
+            </div>
+            <section>
+                <a href="https://www.google.com/maps/place/Cra.+64a+%2311a-30,+Cali,+Valle+del+Cauca/@3.4007893,-76.5414533,17z/data=!3m1!4b1!4m5!3m4!1s0x8e30a152468fa0ff:0xdf424cf6a15a1382!8m2!3d3.4007839!4d-76.5392593">¿Dónde estamos ubicados?</a>
+                <p> Carrera 64a #11a-30 El limonar, Cali, Colombia</p>
+                <p>+57 3205036398 / ladoratta@gmail.com</p>
+                <p>Copyright 2019 <strong>la doratta</strong></p>
+            </section>
+        </footer>
+
+
+        <input type="checkbox" id="menub__hamburguer">
+
+        <div class="container__menu"> 
+            <div class="cont__menu">
+                <nav>
+                    <a href="./index.html" class="links__home">Home</a>
+                    <a href="#" class="links_about" > Sobre nosotros</a>
+                    <a href="./store.html" class="links__menu">Menú</a>
+                    <a href="#" class="links__contact">Contáctanos</a>
+                    <button class="links__btnLS" onclick="window.location.href = 'logIn.html'">INGRESAR</button>
+                    <button class="links__btnLS" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
+                </nav>
+                <label class="menu__close" for="menub__hamburguer"><img src="imgs/close.png"></label>
+            </div>
+        </div>
+
+        
+       
 
     </div>
 

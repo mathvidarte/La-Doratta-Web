@@ -40,9 +40,10 @@
                     <button class="user__btnLS user__btnLS--signUp" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
                 </div>
 
-                <button class="menua__cart">
-                    <img class="cart__btn" src="./imgs/car.png" onclick="window.location.href = 'card.html'">
-                </button>
+                <a class="menua__cart" href="/cart.html">
+                    <img class="cart__btn" src="./imgs/car.png">
+                    <span class="cartSpan"></span>
+                </a>
   
             </div>
             <div class="navegation__menub">
@@ -50,34 +51,24 @@
                 <a href="./index.html" class="menub__logo">   
                     <img  src="imgs/logoMedium.png">
                 </a>
-                <img class="menub__car" src="imgs/car.png"/>
+                
+                    <img class="menub__car" src="imgs/car.png" onclick="window.location.href='cart.html'"/>
+                
             </div>
         </header>
 
         <!------------MAIN---------------->
         <main class="mainS">
 
-            <div class="mainS__status">
+            <!--<div class="mainS__status">
                 <a href="./index.html" class="status__home">Home > </a>
                 <a href="./store.html">Menú ></a>
                 <a><strong>Nombre del producto</strong></a>
-            </div>
+            </div>-->
 
             <article class="mainS__article article">
                 
-                    <div class="infoqty">
-                        <label class="infoqty__label">Cantidad</label>
-                        <select class="infoqty__select">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>+5</option>
-                        </select>
-                    </div>
-                    <div class="infobtn">
-                        <button type="button" class="info__btn">Agregar al carrito<img src="./imgs/cardWhite.png"></button>
-                    </div>
+                    
             </article>
             <article class="articleInfo">
                 <h1 class="articleInfo__tagOne">Nosotros horneamos.</h1>
@@ -87,7 +78,7 @@
                 <p class="articleInfo__bodyText">Harina, mantequilla, azucar, huevos, esencia.</p>
                 <h1 class="articleInfo__title">Detalles del envio</h1>
                 <div class="articleInfo__line"></div>
-                <p class="articleInfo__bodyText">Disponible solamente en la ciudad de Cali. La tarifa del envió varia dependiendo del destino</p>
+                <p class="articleInfo__bodyText">Disponible solamente en la ciudad de Cali. La tarifa del envió tiene un costo de $10.000</p>
             </article>
 
             <article class="recommended">
@@ -155,6 +146,37 @@
             </footer>
 
             <input type="checkbox" id="menub__hamburguer">
+
+        <div class="container__menu"> 
+            <div class="cont__menu">
+                <nav>
+                    <a href="./index.html" class="links__home">Home</a>
+                    <a href="#" class="links_about" > Sobre nosotros</a>
+                    <a href="./store.html" class="links__menu">Menú</a>
+                    <a href="#" class="links__contact">Contáctanos</a>
+                    <button class="links__btnLS" onclick="window.location.href = 'logIn.html'">INGRESAR</button>
+                    <button class="links__btnLS" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
+                </nav>
+                <label class="menu__close" for="menub__hamburguer"><img src="imgs/close.png"></label>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <img src="imgs/logoComplete.png">
+            <div class="menu__networks--respo">
+                <img class="networks__wa" src="imgs/waLogo.png">
+                <img class="networks__ig" src="imgs/igLogo.png">
+            </div>
+            <section>
+                <a href="https://www.google.com/maps/place/Cra.+64a+%2311a-30,+Cali,+Valle+del+Cauca/@3.4007893,-76.5414533,17z/data=!3m1!4b1!4m5!3m4!1s0x8e30a152468fa0ff:0xdf424cf6a15a1382!8m2!3d3.4007839!4d-76.5392593">¿Dónde estamos ubicados?</a>
+                <p> Carrera 64a #11a-30 El limonar, Cali, Colombia</p>
+                <p>+57 3205036398 / ladoratta@gmail.com</p>
+                <p>Copyright 2019 <strong>la doratta</strong></p>
+            </section>
+        </footer>
+
+
+        <input type="checkbox" id="menub__hamburguer">
 
         <div class="container__menu"> 
             <div class="cont__menu">

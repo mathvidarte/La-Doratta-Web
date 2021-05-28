@@ -5,14 +5,6 @@ const filters = document.querySelector('.mainS__filter');
 const filterPopUp = document.querySelector('.filterPopUp');
 const filterBtn = document.querySelector('.filterBtn');
 
-const cartNumber = document.querySelector('.menua__cart span');
-
-let cart = [];
-const cartFromLS = localStorage.getItem('store__cart');
-if(cartFromLS) {
-    cart = JSON.parse(cartFromLS);
-    cartNumber.innerText=cart.length;
-}
 
 const filter__closeBtn = document.querySelector('.filter__closeBtn');
 const popup = document.querySelector('.mainS__filter');
@@ -49,8 +41,8 @@ const handleCollectionResult = (querySnapshot) => {
                 <img src='imgs/starScore.png'>
             </div>
         </a>
-        <button type="button" class="addCart">AGREGAR</button>
-        <button class="product__delete hidden showLoggedInAdmin">Eliminar</button>
+        <button type="button" class="addCart hidden showLoggedIn">AGREGAR</button>
+        <button class="product__delete hidden showLoggedInAdmin">ELIMINAR</button>
         `;
         product.classList.add('product');
         product.setAttribute('style', `background-image: url(${img})`);
@@ -58,10 +50,10 @@ const handleCollectionResult = (querySnapshot) => {
 
         const addCart = product.querySelector('.addCart');
         addCart.addEventListener('click', function () {
-            console.log(data);
-            cart.push(data);
-            localStorage.setItem('store__cart', JSON.stringify(cart));
-            cartNumber.innerText=cart.length;
+            addToMyCart({
+                ...data,
+                id: doc.id,
+            });
         });
         
         });

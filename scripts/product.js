@@ -28,6 +28,8 @@ db.collection('products')
     <div class="article__info">
         <h1 class="info__tittle">${data.name}</h1>
         <p class="info__description">${data.description}</p>
+        <p class="info__description">Sabor: ${data.flavor}</p>
+        <p class= info__description>Tamaño: ${data.sizes}</p>
         <p class="info__price">$${data.price}</p>
         <div class="infoqty">
             <label class="infoqty__label">Cantidad</label>
@@ -38,9 +40,6 @@ db.collection('products')
                 <option>4</option>
                 <option>+5</option>
                 </select>
-        </div>
-        <div class="infobtn">
-            <button type="button" class="info__btn">Agregar al carrito<img src="./imgs/cardWhite.png"></button>
         </div>
     </div>`
 })

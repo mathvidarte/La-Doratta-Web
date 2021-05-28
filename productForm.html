@@ -13,7 +13,10 @@
         <!------------HEADER---------------->
         <header class="navegation">
             <div class="navigation__menua">
-                <img class="menua__logo" src="imgs/logoComplete.png" onclick="window.location.href = 'index.html'">
+                <a href="./index.html" class="menua__logo">
+                    <img src="imgs/logoComplete.png" >
+                </a>
+                
             
                 <div class="menua__links">
                     <a href="#" class="links_about" > Sobre nosotros</a>
@@ -21,16 +24,33 @@
                     <a href="#" class="links__contact">Contáctanos</a>
                 </div>
 
-                <img class="menua__cart" src="./imgs/user.png">
+                <div class="menua__search">
+                    <input type="text" placeholder="Buscar">
+                    <button type="button"><img src="imgs/searchIcon.png"/></button>
+                    
+                </div>
+
+                <div class="menua__close hidden showLoggedIn">
+                    <button class="user__close">CERRAR SESIÓN</button>
+                </div>
+
+                <div class="menua__user hideLoggedIn">
+                    <button class="user__btnLS" onclick="window.location.href = 'logIn.html'">INGRESAR</button>
+                    <button class="user__btnLS user__btnLS--signUp" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
+                </div>
+
+                <a class="menua__cart" href="/cart.html">
+                    <img class="cart__btn" src="./imgs/car.png">
+                    <span class="cartSpan"></span>
+                </a>
   
             </div>
-
             <div class="navegation__menub">
                 <label class="menub__hamburguer" for="menub__hamburguer"><img src="imgs/MunuB.jpg"></label>
                 <a href="./index.html" class="menub__logo">   
                     <img  src="imgs/logoMedium.png">
                 </a>
-                <img class="menub__car" src="imgs/user.png"/>
+                <img class="menub__car" src="imgs/car.png" onclick="window.location.href='cart.html'"/>
             </div>
         </header>
 
@@ -236,11 +256,28 @@
 
         </main>
 
+        <input type="checkbox" id="menub__hamburguer">
+
+        <div class="container__menu"> 
+            <div class="cont__menu">
+                <nav>
+                    <a href="./index.html" class="links__home">Home</a>
+                    <a href="#" class="links_about" > Sobre nosotros</a>
+                    <a href="./store.html" class="links__menu">Menú</a>
+                    <a href="#" class="links__contact">Contáctanos</a>
+                    <button class="links__btnLS" onclick="window.location.href = 'logIn.html'">INGRESAR</button>
+                    <button class="links__btnLS" onclick="window.location.href = 'signUp.html'">REGISTRARSE</button>
+                </nav>
+                <label class="menu__close" for="menub__hamburguer"><img src="imgs/close.png"></label>
+            </div>
+        </div>
+
         <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-storage.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
         
+        <script src="./scripts/authUtils.js"></script>
         <script src="./scripts/general.js"></script>
         <script src="./scripts/productForm.js"></script>
 </body>

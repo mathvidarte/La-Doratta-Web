@@ -50,7 +50,7 @@
 
         .infoqty {
             display: flex;
-            margin: 10px 20px;
+            margin: 30px 20px;
             font-family: 'Work Sans', sans-serif;
             font-weight: lighter;
             color: white;
@@ -75,34 +75,7 @@
                 }
         }
 
-        .infobtn {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-            .info__btn {
-                background-color: rgba(0, 0, 0, .0);
-                border: 2px solid white;
-                box-shadow: none;
-                padding: 5px 0px 5px 10px;
-                width: 285px;
-                text-decoration: none;
-                color: white;
-                font-size: 18px;
-                font-family: 'Work Sans', sans-serif;
-                font-style: italic;
-                align-content: center;
-    
-    
-                img {
-                    width: 25px;
-                    margin-left: 10px;
-                }
-            }
-
-            :hover {
-                background: rgba($color: #ffffff, $alpha: .3);
-            }
-        }
+        
 
 
     }

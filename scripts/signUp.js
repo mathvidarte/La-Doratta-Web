@@ -21,14 +21,18 @@ signUp__inputs.addEventListener('submit', function (event){
     var user = userCredential.user;
     console.log(user);
 
-    db.collection('users').doc(user.uid).set({
-        name,
-        email,
-    }).then (function(e) {
+    const userDoc = {
+      name,
+      email,
+    };
+
+    db.collection('users').doc(user.uid).set(userDoc)
+    .then (function(e) {
       window.location='store.html';
     }).catch ((error) => {
       console.log(error);
     });
+    setLoggedUser(userDoc, user.uid);
 
     
   })
